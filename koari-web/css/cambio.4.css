@@ -598,11 +598,11 @@ header, nav, main, aside, footer, .hero, .overlay {
 }
 
 .producto-card__desc {
-  font-size: 0.75rem;
-  color: var(--texto-2);
-  line-height: 1.55;
+  font-size: 0.88rem;
+  color: #ffffff;
+  line-height: 1.6;
   margin-bottom: 14px;
-  text-shadow: none;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.6);
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
