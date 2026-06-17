@@ -63,7 +63,7 @@
           "nombre": "Promo 4 — 40 Piezas Mix",
           "descripcion": "10 Kanikama, queso, cebollín (Panko) · 10 Salmón, queso, cebollín (Tempura) · 10 Camarón, queso, cebollín (Env. Palta) · 10 Kanikama, palta (Env. Sésamo)",
           "precio": 13990,
-          "imagen": "img/promo-4.jpg",
+          "imagen": "img/promociones/promo4.png",
           "badge": null
         },
         {
@@ -71,7 +71,7 @@
           "nombre": "Promo 5 — 40 Piezas Vip",
           "descripcion": "5 Pollo, queso, cebollín (Panko) · 5 Kanikama, queso, cebollín (Tempura) · 10 Champiñón, palta (Env. Queso) · 10 Salmón, queso (Env. Palta) · 10 Kanikama, palta (Env. Sésamo)",
           "precio": 14990,
-          "imagen": "img/promo-5.jpg",
+          "imagen": "img/promociones/promo5.png",
           "badge": "VIP"
         },
         {

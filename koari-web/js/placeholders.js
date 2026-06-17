@@ -75,8 +75,10 @@ function _esc(s) {
     .replace(/"/g, '&quot;');
 }
 
-// Devuelve la imagen demo de sushi para todas las cards (temporal para presentación al cliente).
-// Cuando existan fotos reales, restaurar la función SVG o asignar producto.imagen en products.json.
+// Devuelve la imagen del producto si existe, de lo contrario usa la imagen demo.
 function generarImagenProducto(producto, categoriaNombre, tipo) {
+  if (producto && producto.imagen) {
+    return producto.imagen;
+  }
   return 'img/sushi-demo.webp';
 }
