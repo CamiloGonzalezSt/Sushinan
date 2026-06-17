@@ -111,7 +111,7 @@
           "nombre": "Promo 10 — 50 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Tempura) · 10 Kanikama, queso, cebollín (Panko) · 10 Palmito, queso (Env. Ciboulette) · 10 Camarón, palta (Env. Sésamo) · 10 Pollo, queso, cebollín (Env. Palta)",
           "precio": 15500,
-          "imagen": "img/promo-10.jpg",
+          "imagen": "img/promociones/promo10.png",
           "badge": null
         },
         {
@@ -119,7 +119,7 @@
           "nombre": "Promo 11 — 80 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Camarón, queso, cebollín (Tempura) · 10 Kanikama, queso, palta (Tempura) · 10 Camarón, queso, cebollín (Palta) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Salmón, palta (Sésamo) · 10 Kanikama, palta (Sésamo) · 10 Palmito, queso (Ciboulette)",
           "precio": 18500,
-          "imagen": "img/promo-11.jpg",
+          "imagen": "img/promociones/promo11.png",
           "badge": null
         },
         {
@@ -127,7 +127,7 @@
           "nombre": "Promo 12 — 86 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Pollo, queso, cebollín (Env. Palta) · 10 Camarón, palta (Env. Queso) · 10 Pulpo, queso, cebollín (Env. Salmón) · 10 Salmón, queso, palta (Env. Sésamo) · 10 Camarón, queso, cebollín (Env. Ciboulette) · 10 Poke ball · 6 Calamar apanado",
           "precio": 24490,
-          "imagen": "img/promo-12.jpg",
+          "imagen": "img/promociones/promo12.png",
           "badge": null
         },
         {
@@ -135,7 +135,7 @@
           "nombre": "Promo 13 — 100 Piezas VIP",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Champiñón, queso, cebollín (Tempura) · 10 Camarón tempura, queso, cebollín (Palta) · 10 Pollo apanado, queso, cebollín (Salmón) · 10 Camarón tempura, queso, palta (Sésamo) · 10 Palmito, palta (Queso) · 10 Kanikama, queso, palta (Ciboulette) · 10 Hosomaki de queso, palta · 5 Gyosas a elección · 5 Tori panko",
           "precio": 16990,
-          "imagen": "img/promo-13.jpg",
+          "imagen": "img/promociones/promo13.png",
           "badge": "Ofertón"
         },
         {
@@ -143,7 +143,7 @@
           "nombre": "Promo Nan — 60 Piezas",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Panko) · 10 Camarón, queso (Env. Palta) · 10 Pollo, palta (Env. Queso) · 10 Camarón, queso (Env. Sésamo) · 10 Kanikama, queso, palta (Ciboulette)",
           "precio": 15000,
-          "imagen": "img/promo-nan-60.jpg",
+          "imagen": "img/promociones/promonan.png",
           "badge": "Popular"
         },
         {
@@ -151,7 +151,7 @@
           "nombre": "Súper Promo — 100 Piezas",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 20 Camarón, queso, cebollín (Palta) · 20 Pollo apanado, palta (Queso) · 20 Kanikama, queso (Env. Ciboulette) · 20 Hosomaki de queso, palta",
           "precio": 24500,
-          "imagen": "img/super-promo-100.jpg",
+          "imagen": "img/promociones/superpromo100.png",
           "badge": "Más pedido"
         }
       ]
@@ -166,7 +166,7 @@
           "nombre": "Promo 14 — 30 Piezas Vegetariano",
           "descripcion": "10 Zapallito, queso, cebollín (Panko) · 10 Champiñón, palta (Env. Queso) · 10 Palmito, queso, cebollín (Env. Palta)",
           "precio": 10000,
-          "imagen": "img/promo-14.jpg",
+          "imagen": "img/promociones/promo14.png",
           "badge": "Vegetariano"
         },
         {
@@ -174,7 +174,7 @@
           "nombre": "Promo 15 — 40 Piezas Vegetariano",
           "descripcion": "10 Champiñón, queso, cebollín (Tempura) · 10 Palmito, queso, cebollín (Panko) · 10 Zapallito italiano, queso (Env. Palta) · 10 Choclo, queso (Env. Ciboulette)",
           "precio": 12990,
-          "imagen": "img/promo-15.jpg",
+          "imagen": "img/promociones/promo15.png",
           "badge": "Vegetariano"
         }
       ]
@@ -188,8 +188,8 @@
           "id": "todo-pollo-1",
           "nombre": "Todo Pollo — Opción 1 (20 Piezas)",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 5 Pollo apanado, queso, cebollín (Palta) · 5 Pollo apanado, palta (Sésamo)",
-          "precio": 12990,
-          "imagen": "img/todo-pollo-1.jpg",
+          "precio": 7500,
+          "imagen": "img/pollo/todopollo1.png",
           "badge": "Pollo"
         },
         {
@@ -197,15 +197,15 @@
           "nombre": "Todo Pollo — Opción 2 (40 Piezas)",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 10 Pollo apanado, palta (Tempura) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Pollo apanado, palta (Queso)",
           "precio": 12990,
-          "imagen": "img/todo-pollo-2.jpg",
+          "imagen": "img/pollo/todopollo2.png",
           "badge": "Pollo"
         },
         {
           "id": "todo-pollo-3",
           "nombre": "Todo Pollo — Opción 3 (60 Piezas)",
           "descripcion": "10 Pollo apanado, palta (Tempura) · 10 Pollo apanado, queso (Panko) · 10 Pollo apanado, queso, cebollín (Panko) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Pollo apanado, palta (Queso) · 10 Pollo apanado, queso (Sésamo)",
-          "precio": 12990,
-          "imagen": "img/todo-pollo-3.jpg",
+          "precio": 16500,
+          "imagen": "img/pollo/todopollo3.png",
           "badge": "Pollo"
         }
       ]
@@ -219,7 +219,7 @@
           "id": "carta-01",
           "nombre": "Camarón tempura, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls1.png",
           "badge": null,
           "variaciones": [
             {
@@ -245,7 +245,7 @@
           "id": "carta-02",
           "nombre": "Pollo apanado, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls2.png",
           "badge": null,
           "variaciones": [
             {
@@ -271,7 +271,7 @@
           "id": "carta-03",
           "nombre": "Salmón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls3.png",
           "badge": null,
           "variaciones": [
             {
@@ -297,7 +297,7 @@
           "id": "carta-04",
           "nombre": "Calamar apanado, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": [
             {
@@ -323,7 +323,7 @@
           "id": "carta-05",
           "nombre": "Pulpo, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": [
             {
@@ -349,7 +349,7 @@
           "id": "carta-06",
           "nombre": "Kanikama, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": [
             {
@@ -375,7 +375,7 @@
           "id": "carta-07",
           "nombre": "Camarón, salmón, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -392,7 +392,7 @@
           "id": "carta-08",
           "nombre": "Calamar apanado, pollo apanado, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -409,7 +409,7 @@
           "id": "carta-09",
           "nombre": "Champiñón tempura, camarón, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -426,7 +426,7 @@
           "id": "carta-10",
           "nombre": "Kanikama, camarón tempura, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -443,7 +443,7 @@
           "id": "carta-11",
           "nombre": "Palmito, pollo apanado, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-carta.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -461,7 +461,7 @@
           "nombre": "Arma tu Roll",
           "descripcion": "Especial · elige 3 ingredientes + 1 envoltura. Precio fijo.",
           "precio": 7000,
-          "imagen": "img/roll-arma.jpg",
+          "imagen": "img/rolls/rolls4.png",
           "badge": "Nuevo",
           "armaTuRoll": {
             "maxIngredientes": 3,
@@ -498,7 +498,7 @@
           "id": "sin-01",
           "nombre": "Salmón, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz1.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -513,7 +513,7 @@
           "id": "sin-02",
           "nombre": "Camarón, queso, cebollín, palta",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz2.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -528,7 +528,7 @@
           "id": "sin-03",
           "nombre": "Pollo apanado, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz3.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -543,7 +543,7 @@
           "id": "sin-04",
           "nombre": "Pollo, queso, palta, kanikama",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz4.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -558,7 +558,7 @@
           "id": "sin-05",
           "nombre": "Kanikama, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz5.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -573,7 +573,7 @@
           "id": "sin-06",
           "nombre": "Calamar apanado, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz6.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -588,7 +588,7 @@
           "id": "sin-07",
           "nombre": "Salmón, camarón tempura, queso, palta",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz7.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -603,7 +603,7 @@
           "id": "sin-08",
           "nombre": "Palmito, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz8.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -618,7 +618,7 @@
           "id": "sin-09",
           "nombre": "Champiñón, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/roll-sin-arroz.jpg",
+          "imagen": "img/sinarroz/sinarroz9.png",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -640,7 +640,7 @@
           "id": "veg-01",
           "nombre": "Palmito, palta, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -655,7 +655,7 @@
           "id": "veg-02",
           "nombre": "Champiñón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -670,7 +670,7 @@
           "id": "veg-03",
           "nombre": "Choclo, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -685,7 +685,7 @@
           "id": "veg-04",
           "nombre": "Pepino, pimentón, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -700,7 +700,7 @@
           "id": "veg-05",
           "nombre": "Pimentón, queso, palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -715,7 +715,7 @@
           "id": "veg-06",
           "nombre": "Champiñón, choclo, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -730,7 +730,7 @@
           "id": "veg-07",
           "nombre": "Zapallito apanado, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -745,7 +745,7 @@
           "id": "veg-08",
           "nombre": "Palmito, choclo, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/roll-veg.jpg",
+          "imagen": "img/veg/veg1.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
