@@ -996,7 +996,7 @@
           "nombre": "Sashimi de Pulpo",
           "descripcion": "9 cortes.",
           "precio": 8500,
-          "imagen": "img/sashimi-pulpo.jpg",
+          "imagen": "img/s/sashimipulpo.png",
           "badge": null
         },
         {
@@ -1004,7 +1004,7 @@
           "nombre": "Sashimi de Salmón",
           "descripcion": "9 cortes.",
           "precio": 8500,
-          "imagen": "img/sashimi-salmon.jpg",
+          "imagen": "img/s/sashimisalmon.png",
           "badge": null
         },
         {
@@ -1012,7 +1012,7 @@
           "nombre": "Sashimi Mixto",
           "descripcion": "15 cortes.",
           "precio": 14500,
-          "imagen": "img/sashimi-mixto.jpg",
+          "imagen": "img/s/sashimimixto.png",
           "badge": null
         }
       ]
