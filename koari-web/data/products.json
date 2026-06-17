@@ -79,7 +79,7 @@
           "nombre": "Promo 6 — 45 Piezas Mix",
           "descripcion": "10 Carne, queso, cebollín (Panko) · 10 Pollo, queso, cebollín (Tempura) · 10 Kanikama, palta (Env. Ciboulette) · 10 Camarón, queso, cebollín (Env. Palta) · 5 Poke ball",
           "precio": 15490,
-          "imagen": "img/promo-6.jpg",
+          "imagen": "img/promociones/promo6.png",
           "badge": null
         },
         {
@@ -87,7 +87,7 @@
           "nombre": "Promo 7 — 50 Piezas Furai",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Pollo, palta (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Salmón, queso, palta (Tempura) · 10 Camarón, queso, cebollín (Tempura)",
           "precio": 15990,
-          "imagen": "img/promo-7.jpg",
+          "imagen": "img/promociones/promo7.png",
           "badge": "Caliente"
         },
         {
@@ -95,7 +95,7 @@
           "nombre": "Promo 8 — 56 Piezas",
           "descripcion": "20 Pollo, queso, cebollín (Panko) · 10 Champiñón, palta (Env. Queso) · 10 Kanikama, queso, cebollín (Env. Salmón) · 10 Camarón, queso (Env. Palta) · 5 Poke ball · 1 Bebida 1.5lt",
           "precio": 16990,
-          "imagen": "img/promo-8.jpg",
+          "imagen": "img/promociones/promo8.png",
           "badge": null
         },
         {
@@ -103,7 +103,7 @@
           "nombre": "Promo 9 — 60 Piezas VIP",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Salmón, queso (Env. Salmón y Palta) · 10 Champiñón tempura, palta (Env. Queso) · 10 Camarón, queso (Env. Sésamo) · 10 Kanikama, queso, palta (Ciboulette)",
           "precio": 17500,
-          "imagen": "img/promo-9.jpg",
+          "imagen": "img/promociones/promo9.png",
           "badge": "VIP"
         },
         {
