@@ -305,7 +305,20 @@ function renderCarrito() {
     itemsContainer.appendChild(item);
   });
 
-  totalEl.textContent = formatearPrecio(carrito.getTotalPrecio());
+  const subtotal   = carrito.getTotalPrecio();
+  const costoEnvio = getCostoEnvio();
+  const desglose   = document.getElementById('carrito-desglose');
+
+  if (costoEnvio > 0) {
+    document.getElementById('carrito-subtotal').textContent  = formatearPrecio(subtotal);
+    document.getElementById('carrito-costo-envio').textContent = formatearPrecio(costoEnvio);
+    document.getElementById('carrito-comuna-label').textContent = document.getElementById('cliente-comuna')?.value || '';
+    desglose.style.display = '';
+  } else {
+    desglose.style.display = 'none';
+  }
+
+  totalEl.textContent = formatearPrecio(subtotal + costoEnvio);
   btnPedir.disabled = false;
 }
 
@@ -692,8 +705,15 @@ function inicializarWspFlotante() {
 // =====================
 //  PAGO
 // =====================
-//  COMUNAS
+//  COMUNAS Y COSTO ENVÍO
 // =====================
+function getCostoEnvio() {
+  const sel = document.getElementById('cliente-comuna');
+  const comuna = sel?.value?.trim();
+  if (!comuna || !DATA.negocio.costos_envio) return 0;
+  return DATA.negocio.costos_envio[comuna] || 0;
+}
+
 function inicializarComunas() {
   const sel = document.getElementById('cliente-comuna');
   if (!sel || !DATA.negocio.zonas_cobertura) return;
@@ -704,6 +724,7 @@ function inicializarComunas() {
     opt.textContent = c;
     sel.appendChild(opt);
   });
+  sel.addEventListener('change', renderCarrito);
 }
 
 // =====================
@@ -823,14 +844,24 @@ function enviarPedidoWhatsapp() {
     ).join('\n');
   }
 
+  const costoEnvio = getCostoEnvio();
+  const subtotal   = carrito.getTotalPrecio();
+  const totalConEnvio = subtotal + costoEnvio;
+
   const cabecera = rpad('Producto', C_PROD) + '  ' + lpad('Cant.', C_CANT) + '  ' + lpad('Precio', C_PRECIO);
   let filas = '';
   entries.forEach(({ producto, cantidad }) => {
     filas += fila(producto.nombre, cantidad, producto.precio * cantidad) + '\n';
   });
-  const totalFila = fila('TOTAL', null, carrito.getTotalPrecio());
 
-  const tabla = '```\n' + cabecera + '\n' + SEP + '\n' + filas + SEP + '\n' + totalFila + '\n```';
+  let pieTabla = SEP + '\n';
+  if (costoEnvio > 0) {
+    pieTabla += fila('Subtotal', null, subtotal) + '\n';
+    pieTabla += fila(`Envio (${comuna})`, null, costoEnvio) + '\n';
+  }
+  pieTabla += fila('TOTAL', null, totalConEnvio);
+
+  const tabla = '```\n' + cabecera + '\n' + SEP + '\n' + filas + pieTabla + '\n```';
 
   let msg = `NUEVO PEDIDO - Sushi Nan\n\n`;
   msg += tabla + '\n\n';

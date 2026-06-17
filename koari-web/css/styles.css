@@ -857,6 +857,24 @@ header, nav, main, aside, footer, .hero, .overlay {
   flex-shrink: 0;
 }
 
+.carrito__desglose {
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carrito__desglose-fila {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  color: var(--texto-2);
+  margin-bottom: 5px;
+}
+
+.carrito__desglose-envio {
+  color: var(--dorado);
+}
+
 .carrito__total {
   display: flex;
   justify-content: space-between;

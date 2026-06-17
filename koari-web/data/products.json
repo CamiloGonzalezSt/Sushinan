@@ -19,6 +19,12 @@
     "horario": "Lun–Jue 12:15–23:30 · Vie–Sáb 12:15–23:45 · Dom solo reservas previas",
     "instagram": "https://www.instagram.com/sushinan",
     "facebook": "https://www.facebook.com/sushinan",
+    "costos_envio": {
+      "Recoleta": 1500,
+      "Conchalí": 2500,
+      "Huechuraba": 2500,
+      "Independencia": 2500
+    },
     "pago_transferencia": {
       "banco": "COMPLETAR BANCO",
       "tipo_cuenta": "Cuenta Rut",
@@ -856,7 +862,7 @@
           "nombre": "Sushi Burger — Camarón Tempura",
           "descripcion": "Camarón tempura, queso, palta, cebollín.",
           "precio": 7500,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer3.png",
           "badge": null
         },
         {
@@ -864,7 +870,7 @@
           "nombre": "Sushi Burger — Salmón",
           "descripcion": "Salmón, queso, palta, cebollín.",
           "precio": 8000,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer4.png",
           "badge": null
         },
         {
@@ -872,7 +878,7 @@
           "nombre": "Sushi Burger — Salmón y Camarón",
           "descripcion": "Salmón, camarón tempura, queso, palta.",
           "precio": 8490,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer5.png",
           "badge": null
         },
         {
@@ -880,7 +886,7 @@
           "nombre": "Sushi Burger — Carne",
           "descripcion": "Carne salteada, queso, palta, cebollín.",
           "precio": 7990,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer6.png",
           "badge": null
         },
         {
@@ -888,7 +894,7 @@
           "nombre": "Sushi Burger — Calamar",
           "descripcion": "Calamar apanado, queso, palta, cebollín.",
           "precio": 7490,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer7.png",
           "badge": null
         },
         {
@@ -896,7 +902,7 @@
           "nombre": "Sushi Burger — Champiñón",
           "descripcion": "Champiñón tempura, queso, palta, cebollín.",
           "precio": 7000,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/burguer/burguer8.png",
           "badge": "Vegetariano"
         }
       ]

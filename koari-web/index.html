@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=38">
+  <link rel="stylesheet" href="css/styles.css?v=39">
 </head>
 <body>
 
@@ -141,6 +141,16 @@
 
     <!-- CTA FIJO ABAJO -->
     <div class="carrito__cta">
+      <div class="carrito__desglose" id="carrito-desglose" style="display:none">
+        <div class="carrito__desglose-fila">
+          <span>Subtotal</span>
+          <span id="carrito-subtotal">$0</span>
+        </div>
+        <div class="carrito__desglose-fila carrito__desglose-envio">
+          <span>Envío (<span id="carrito-comuna-label"></span>)</span>
+          <span id="carrito-costo-envio">$0</span>
+        </div>
+      </div>
       <div class="carrito__total">
         <span class="carrito__total-label">Total</span>
         <span class="carrito__total-valor" id="carrito-total">$0</span>
@@ -227,6 +237,6 @@
   <script src="js/placeholders.js?v=2"></script>
   <script src="js/ilustraciones.js?v=1"></script>
   <script src="js/cart.js?v=4"></script>
-  <script src="js/app.js?v=11"></script>
+  <script src="js/app.js?v=12"></script>
 </body>
 </html>
