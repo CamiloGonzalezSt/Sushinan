@@ -655,7 +655,7 @@
           "id": "veg-02",
           "nombre": "Champiñón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg2.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -670,7 +670,7 @@
           "id": "veg-03",
           "nombre": "Choclo, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg3.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -685,7 +685,7 @@
           "id": "veg-04",
           "nombre": "Pepino, pimentón, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg4.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -700,7 +700,7 @@
           "id": "veg-05",
           "nombre": "Pimentón, queso, palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg5.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -715,7 +715,7 @@
           "id": "veg-06",
           "nombre": "Champiñón, choclo, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg6.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -730,7 +730,7 @@
           "id": "veg-07",
           "nombre": "Zapallito apanado, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg7.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -745,7 +745,7 @@
           "id": "veg-08",
           "nombre": "Palmito, choclo, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/veg/veg8.png",
           "badge": "Vegetariano",
           "variaciones": {
             "etiqueta": "Envoltura",
@@ -768,7 +768,7 @@
           "nombre": "Sushi Burger — Pollo",
           "descripcion": "Pollo, queso crema, palta, cebollín.",
           "precio": 7300,
-          "imagen": "img/burger-1.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -776,7 +776,7 @@
           "nombre": "Sushi Burger — Kanikama",
           "descripcion": "Kanikama, queso, palta, cebollín.",
           "precio": 7000,
-          "imagen": "img/burger-2.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -784,7 +784,7 @@
           "nombre": "Sushi Burger — Camarón Tempura",
           "descripcion": "Camarón tempura, queso, palta, cebollín.",
           "precio": 7500,
-          "imagen": "img/burger-3.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -792,7 +792,7 @@
           "nombre": "Sushi Burger — Salmón",
           "descripcion": "Salmón, queso, palta, cebollín.",
           "precio": 8000,
-          "imagen": "img/burger-4.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -800,7 +800,7 @@
           "nombre": "Sushi Burger — Salmón y Camarón",
           "descripcion": "Salmón, camarón tempura, queso, palta.",
           "precio": 8490,
-          "imagen": "img/burger-5.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -808,7 +808,7 @@
           "nombre": "Sushi Burger — Carne",
           "descripcion": "Carne salteada, queso, palta, cebollín.",
           "precio": 7990,
-          "imagen": "img/burger-6.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -816,7 +816,7 @@
           "nombre": "Sushi Burger — Calamar",
           "descripcion": "Calamar apanado, queso, palta, cebollín.",
           "precio": 7490,
-          "imagen": "img/burger-7.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": null
         },
         {
@@ -824,7 +824,7 @@
           "nombre": "Sushi Burger — Champiñón",
           "descripcion": "Champiñón tempura, queso, palta, cebollín.",
           "precio": 7000,
-          "imagen": "img/burger-8.jpg",
+          "imagen": "img/burger/burguer1.png",
           "badge": "Vegetariano"
         }
       ]
