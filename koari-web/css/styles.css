@@ -1223,6 +1223,45 @@ header, nav, main, aside, footer, .hero, .overlay {
 .modal-variaciones__dimension { margin-bottom: 18px; }
 .modal-variaciones__dimension:last-child { margin-bottom: 0; }
 
+/* Arma tu Roll — selector de ingredientes */
+.arma-counter {
+  font-size: 0.78rem;
+  color: var(--texto-2);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.arma-counter.completo { color: #4caf50; }
+
+.arma-ingredientes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.arma-ingr-btn {
+  background: var(--bg-card);
+  border: 1px solid var(--borde-2);
+  border-radius: 20px;
+  padding: 6px 14px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.85rem;
+  color: var(--texto-2);
+  cursor: pointer;
+  transition: all var(--trans);
+}
+.arma-ingr-btn:hover { border-color: var(--rojo); color: #fff; }
+.arma-ingr-btn.activa {
+  background: var(--rojo);
+  border-color: var(--rojo);
+  color: #fff;
+}
+
+.btn-modal-agregar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .modal-variaciones__label {
   font-family: 'Oswald', sans-serif;
   font-size: 0.72rem;

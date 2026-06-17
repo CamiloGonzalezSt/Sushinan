@@ -462,7 +462,30 @@
           "descripcion": "Especial · elige 3 ingredientes + 1 envoltura. Precio fijo.",
           "precio": 7000,
           "imagen": "img/roll-arma.jpg",
-          "badge": "Nuevo"
+          "badge": "Nuevo",
+          "armaTuRoll": {
+            "maxIngredientes": 3,
+            "ingredientes": [
+              { "id": "camaron", "nombre": "Camarón tempura" },
+              { "id": "pollo", "nombre": "Pollo apanado" },
+              { "id": "salmon", "nombre": "Salmón" },
+              { "id": "kanikama", "nombre": "Kanikama" },
+              { "id": "calamar", "nombre": "Calamar apanado" },
+              { "id": "pulpo", "nombre": "Pulpo" },
+              { "id": "champinon", "nombre": "Champiñón" },
+              { "id": "palmito", "nombre": "Palmito" },
+              { "id": "queso", "nombre": "Queso crema" },
+              { "id": "palta", "nombre": "Palta" },
+              { "id": "cebollin", "nombre": "Cebollín" }
+            ],
+            "envolturas": [
+              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo" },
+              { "id": "palta", "nombre": "Palta" },
+              { "id": "frito", "nombre": "Frito en Panko o Tempura" },
+              { "id": "queso", "nombre": "Queso crema" },
+              { "id": "salmon", "nombre": "Salmón" }
+            ]
+          }
         }
       ]
     },

@@ -3,6 +3,10 @@
 // Estado del pago
 let pagoMetodo = 'efectivo';
 
+// Estado Arma tu Roll
+let armaTuRollIngredientes = [];
+let armaTuRollEnvoltura = null;
+
 document.addEventListener('DOMContentLoaded', async () => {
   await cargarDatos();
   if (!DATA) return;
@@ -119,12 +123,14 @@ function renderProductos() {
 //  VARIACIONES (rolls cuyo precio depende de la envoltura)
 // =====================
 function tieneVariaciones(p) {
+  if (p.armaTuRoll) return true;
   if (Array.isArray(p.variaciones)) return p.variaciones.length > 0;
   return !!(p.variaciones && p.variaciones.opciones && p.variaciones.opciones.length);
 }
 
 function precioMinimo(p) {
   if (!tieneVariaciones(p)) return 0;
+  if (p.armaTuRoll) return p.precio;
   if (!Array.isArray(p.variaciones)) {
     return Math.min(...p.variaciones.opciones.map(o => o.precio));
   }
@@ -136,6 +142,7 @@ function precioMinimo(p) {
 }
 
 function precioCardTexto(p) {
+  if (p.armaTuRoll) return formatearPrecio(p.precio);
   return tieneVariaciones(p) ? `desde ${formatearPrecio(precioMinimo(p))}` : formatearPrecio(p.precio);
 }
 
@@ -337,9 +344,11 @@ function inicializarModal() {
 
 function abrirModal(producto) {
   modalProductoActual = producto;
+  armaTuRollIngredientes = [];
+  armaTuRollEnvoltura = null;
 
   // Inicializar modalVariacionActual según la estructura
-  if (!tieneVariaciones(producto)) {
+  if (producto.armaTuRoll || !tieneVariaciones(producto)) {
     modalVariacionActual = null;
   } else if (Array.isArray(producto.variaciones)) {
     // Estructura nueva: array de dimensiones. Selecciona el primer elemento de cada dimensión
@@ -388,7 +397,9 @@ function cerrarModal() {
 
 function actualizarModalPrecio() {
   let precio = 0;
-  if (!modalVariacionActual) {
+  if (modalProductoActual && modalProductoActual.armaTuRoll) {
+    precio = modalProductoActual.precio;
+  } else if (!modalVariacionActual) {
     precio = modalProductoActual ? modalProductoActual.precio : 0;
   } else if (Array.isArray(modalVariacionActual)) {
     // Estructura nueva: suma los precios de todas las dimensiones
@@ -400,6 +411,63 @@ function actualizarModalPrecio() {
   document.getElementById('modal-precio').textContent = formatearPrecio(precio);
 }
 
+function renderArmaTuRoll(producto) {
+  const cont = document.getElementById('modal-variaciones');
+  const cfg = producto.armaTuRoll;
+  const max = cfg.maxIngredientes;
+
+  const renderContador = () => {
+    const n = armaTuRollIngredientes.length;
+    cont.querySelector('.arma-counter').textContent = `${n} / ${max} ingredientes`;
+    cont.querySelector('.arma-counter').className = 'arma-counter' + (n === max ? ' completo' : '');
+  };
+
+  cont.innerHTML = `
+    <p class="modal-variaciones__label">Elige ${max} ingredientes</p>
+    <p class="arma-counter">0 / ${max} ingredientes</p>
+    <div class="arma-ingredientes">
+      ${cfg.ingredientes.map(i => `
+        <button class="arma-ingr-btn" data-id="${i.id}">${i.nombre}</button>
+      `).join('')}
+    </div>
+    <p class="modal-variaciones__label" style="margin-top:16px">Envoltura</p>
+    <div class="modal-variaciones__opciones">
+      ${cfg.envolturas.map((e, idx) => `
+        <button class="variacion-btn${idx === 0 ? ' activa' : ''}" data-env="${e.id}">
+          <span>${e.nombre}</span>
+        </button>
+      `).join('')}
+    </div>`;
+
+  // Inicializar envoltura por defecto
+  armaTuRollEnvoltura = cfg.envolturas[0].id;
+
+  cont.querySelectorAll('.arma-ingr-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const id = btn.dataset.id;
+      const idx = armaTuRollIngredientes.indexOf(id);
+      if (idx >= 0) {
+        armaTuRollIngredientes.splice(idx, 1);
+        btn.classList.remove('activa');
+      } else if (armaTuRollIngredientes.length < max) {
+        armaTuRollIngredientes.push(id);
+        btn.classList.add('activa');
+      }
+      renderContador();
+      renderModalControles(producto);
+    });
+  });
+
+  cont.querySelectorAll('.variacion-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      cont.querySelectorAll('.variacion-btn').forEach(b => b.classList.remove('activa'));
+      btn.classList.add('activa');
+      armaTuRollEnvoltura = btn.dataset.env;
+      renderModalControles(producto);
+    });
+  });
+}
+
 function renderModalVariaciones(producto) {
   const cont = document.getElementById('modal-variaciones');
   if (!cont) return;
@@ -409,6 +477,11 @@ function renderModalVariaciones(producto) {
     return;
   }
   cont.style.display = '';
+
+  if (producto.armaTuRoll) {
+    renderArmaTuRoll(producto);
+    return;
+  }
 
   if (!Array.isArray(producto.variaciones)) {
     // ESTRUCTURA ANTIGUA: un solo objeto con opciones
@@ -465,8 +538,53 @@ function renderModalVariaciones(producto) {
   }
 }
 
+function productoConVariacionArma(producto) {
+  const cfg = producto.armaTuRoll;
+  const nombres = armaTuRollIngredientes.map(id => cfg.ingredientes.find(i => i.id === id)?.nombre || id);
+  const envObj = cfg.envolturas.find(e => e.id === armaTuRollEnvoltura);
+  const idCompuesto = producto.id + '__' + armaTuRollIngredientes.join('__') + '__' + armaTuRollEnvoltura;
+  return {
+    id: idCompuesto,
+    nombre: producto.nombre + ' — ' + nombres.join(', ') + ' · ' + (envObj?.nombre || armaTuRollEnvoltura),
+    descripcion: producto.descripcion,
+    precio: producto.precio,
+    imagen: producto.imagen,
+    badge: producto.badge
+  };
+}
+
 function renderModalControles(producto) {
   const container = document.getElementById('modal-controles');
+
+  if (producto.armaTuRoll) {
+    const completo = armaTuRollIngredientes.length === producto.armaTuRoll.maxIngredientes && armaTuRollEnvoltura;
+    if (!completo) {
+      const faltantes = producto.armaTuRoll.maxIngredientes - armaTuRollIngredientes.length;
+      container.innerHTML = `<button class="btn-agregar btn-modal-agregar" disabled>Elige ${faltantes} ingrediente${faltantes !== 1 ? 's' : ''} más</button>`;
+      return;
+    }
+    const item = productoConVariacionArma(producto);
+    const cantidad = carrito.getCantidad(item.id);
+    if (cantidad === 0) {
+      container.innerHTML = `<button class="btn-agregar btn-modal-agregar">+ Agregar</button>`;
+      container.querySelector('.btn-modal-agregar').addEventListener('click', () => {
+        carrito.agregar(item);
+        animarCartBtn();
+        renderModalControles(producto);
+      });
+    } else {
+      container.innerHTML = `
+        <div class="selector-cantidad">
+          <button class="btn-restar" aria-label="Restar">−</button>
+          <span>${cantidad}</span>
+          <button class="btn-sumar" aria-label="Sumar">+</button>
+        </div>`;
+      container.querySelector('.btn-restar').addEventListener('click', () => { carrito.quitar(item.id); renderModalControles(producto); });
+      container.querySelector('.btn-sumar').addEventListener('click', () => { carrito.agregar(item); animarCartBtn(); renderModalControles(producto); });
+    }
+    return;
+  }
+
   // Para productos con variación, el item del carrito incluye todas las variaciones elegidas.
   const item = tieneVariaciones(producto)
     ? productoConVariacion(producto, modalVariacionActual)
