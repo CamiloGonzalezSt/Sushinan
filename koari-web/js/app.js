@@ -63,7 +63,11 @@ function renderNavCategorias() {
     btn.dataset.categoria = cat.id;
     btn.setAttribute('aria-pressed', String(i === 0));
     btn.innerHTML = (cat.icono ? `<span>${cat.icono}</span>` : '') + cat.nombre;
-    btn.addEventListener('click', () => {
+    const anticipar = () => priorizarImagenesCategoria(cat.id);
+    btn.addEventListener('pointerenter', anticipar, { once: true });
+    btn.addEventListener('focus', anticipar, { once: true });
+    btn.addEventListener('touchstart', anticipar, { once: true, passive: true });
+    btn.addEventListener('click', async () => {
       document.querySelectorAll('.categoria-btn').forEach(b => {
         b.classList.remove('activa');
         b.setAttribute('aria-pressed', 'false');
@@ -72,12 +76,36 @@ function renderNavCategorias() {
       btn.setAttribute('aria-pressed', 'true');
       centrarBotonNav(nav, btn);
       const sec = document.getElementById('seccion-' + cat.id);
-      if (sec) sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      if (sec) {
+        await prepararSaltoCategoria(cat.id);
+        sec.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
     nav.appendChild(btn);
   });
 
   inicializarNavScroll(nav);
+}
+
+function priorizarImagenesCategoria(categoriaId) {
+  const imagenes = [...document.querySelectorAll(`#seccion-${categoriaId} .producto-card__img`)];
+  imagenes.forEach((imagen, indice) => {
+    imagen.loading = 'eager';
+    if (indice < 4) imagen.fetchPriority = 'high';
+  });
+  return imagenes;
+}
+
+async function prepararSaltoCategoria(categoriaId) {
+  const primeras = priorizarImagenesCategoria(categoriaId).slice(0, 4);
+  const cargar = Promise.allSettled(primeras.map(imagen => {
+    if (imagen.complete && imagen.naturalWidth > 0) return Promise.resolve();
+    return imagen.decode ? imagen.decode() : new Promise(resolve => {
+      imagen.addEventListener('load', resolve, { once: true });
+      imagen.addEventListener('error', resolve, { once: true });
+    });
+  }));
+  await Promise.race([cargar, new Promise(resolve => setTimeout(resolve, 350))]);
 }
 
 // Centra horizontalmente el botón activo dentro de la barra de categorías.

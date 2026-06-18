@@ -6,7 +6,7 @@ let DATA = null;
 
 async function cargarDatos() {
   try {
-    const res = await fetch('data/products.json?v=5');
+    const res = await fetch('data/products.json?v=6');
     if (!res.ok) throw new Error(`No se pudo cargar el catálogo (${res.status})`);
     DATA = await res.json();
     if (!DATA?.negocio || !Array.isArray(DATA?.categorias)) {

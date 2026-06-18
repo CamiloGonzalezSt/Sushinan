@@ -22,12 +22,30 @@
     "pedido_minimo": 0,
     "envio_gratis_desde": 0,
     "horarios_pedido": {
-      "1": ["12:15", "23:30"],
-      "2": ["12:15", "23:30"],
-      "3": ["12:15", "23:30"],
-      "4": ["12:15", "23:30"],
-      "5": ["12:15", "23:45"],
-      "6": ["12:15", "23:45"]
+      "1": [
+        "12:15",
+        "23:30"
+      ],
+      "2": [
+        "12:15",
+        "23:30"
+      ],
+      "3": [
+        "12:15",
+        "23:30"
+      ],
+      "4": [
+        "12:15",
+        "23:30"
+      ],
+      "5": [
+        "12:15",
+        "23:45"
+      ],
+      "6": [
+        "12:15",
+        "23:45"
+      ]
     },
     "instagram": "https://www.instagram.com/sushinan.s.centro/",
     "facebook": "https://www.facebook.com/www.sushinan.cl",
@@ -57,7 +75,7 @@
           "nombre": "Promo 1 — 20 Piezas",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, palta (Env. Sésamo)",
           "precio": 7500,
-          "imagen": "img/promociones/promo1.png",
+          "imagen": "img/optimized/promociones/promo1.jpg",
           "badge": null
         },
         {
@@ -65,7 +83,7 @@
           "nombre": "Promo 2 — 20 Piezas Mix",
           "descripcion": "5 Pollo, queso, cebollín (Panko) · 5 Kanikama, queso, cebollín (Tempura) · 5 Salmón, queso (Env. Palta) · 5 Kanikama, palta (Env. Sésamo)",
           "precio": 9000,
-          "imagen": "img/promociones/promo2.png",
+          "imagen": "img/optimized/promociones/promo2.jpg",
           "badge": null
         },
         {
@@ -73,7 +91,7 @@
           "nombre": "Promo 3 — 36 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, palta (Env. Ciboulette) · 10 Camarón, queso, cebollín (Env. Palta) · 5 Poke ball · 1 Bebida 350ml",
           "precio": 12500,
-          "imagen": "img/promociones/promo3.png",
+          "imagen": "img/optimized/promociones/promo3.jpg",
           "badge": null
         },
         {
@@ -81,7 +99,7 @@
           "nombre": "Promo 4 — 40 Piezas Mix",
           "descripcion": "10 Kanikama, queso, cebollín (Panko) · 10 Salmón, queso, cebollín (Tempura) · 10 Camarón, queso, cebollín (Env. Palta) · 10 Kanikama, palta (Env. Sésamo)",
           "precio": 13990,
-          "imagen": "img/promociones/promo4.png",
+          "imagen": "img/optimized/promociones/promo4.jpg",
           "badge": null
         },
         {
@@ -89,7 +107,7 @@
           "nombre": "Promo 5 — 40 Piezas Vip",
           "descripcion": "5 Pollo, queso, cebollín (Panko) · 5 Kanikama, queso, cebollín (Tempura) · 10 Champiñón, palta (Env. Queso) · 10 Salmón, queso (Env. Palta) · 10 Kanikama, palta (Env. Sésamo)",
           "precio": 14990,
-          "imagen": "img/promociones/promo5.png",
+          "imagen": "img/optimized/promociones/promo5.jpg",
           "badge": "VIP"
         },
         {
@@ -97,7 +115,7 @@
           "nombre": "Promo 6 — 45 Piezas Mix",
           "descripcion": "10 Carne, queso, cebollín (Panko) · 10 Pollo, queso, cebollín (Tempura) · 10 Kanikama, palta (Env. Ciboulette) · 10 Camarón, queso, cebollín (Env. Palta) · 5 Poke ball",
           "precio": 15490,
-          "imagen": "img/promociones/promo6.png",
+          "imagen": "img/optimized/promociones/promo6.jpg",
           "badge": null
         },
         {
@@ -105,7 +123,7 @@
           "nombre": "Promo 7 — 50 Piezas Furai",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Pollo, palta (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Salmón, queso, palta (Tempura) · 10 Camarón, queso, cebollín (Tempura)",
           "precio": 15990,
-          "imagen": "img/promociones/promo7.png",
+          "imagen": "img/optimized/promociones/promo7.jpg",
           "badge": "Caliente"
         },
         {
@@ -113,7 +131,7 @@
           "nombre": "Promo 8 — 56 Piezas",
           "descripcion": "20 Pollo, queso, cebollín (Panko) · 10 Champiñón, palta (Env. Queso) · 10 Kanikama, queso, cebollín (Env. Salmón) · 10 Camarón, queso (Env. Palta) · 5 Poke ball · 1 Bebida 1.5lt",
           "precio": 16990,
-          "imagen": "img/promociones/promo8.png",
+          "imagen": "img/optimized/promociones/promo8.jpg",
           "badge": null
         },
         {
@@ -121,7 +139,7 @@
           "nombre": "Promo 9 — 60 Piezas VIP",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Salmón, queso (Env. Salmón y Palta) · 10 Champiñón tempura, palta (Env. Queso) · 10 Camarón, queso (Env. Sésamo) · 10 Kanikama, queso, palta (Ciboulette)",
           "precio": 17500,
-          "imagen": "img/promociones/promo9.png",
+          "imagen": "img/optimized/promociones/promo9.jpg",
           "badge": "VIP"
         },
         {
@@ -129,7 +147,7 @@
           "nombre": "Promo 10 — 50 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Tempura) · 10 Kanikama, queso, cebollín (Panko) · 10 Palmito, queso (Env. Ciboulette) · 10 Camarón, palta (Env. Sésamo) · 10 Pollo, queso, cebollín (Env. Palta)",
           "precio": 15500,
-          "imagen": "img/promociones/promo10.png",
+          "imagen": "img/optimized/promociones/promo10.jpg",
           "badge": null
         },
         {
@@ -137,7 +155,7 @@
           "nombre": "Promo 11 — 80 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Camarón, queso, cebollín (Tempura) · 10 Kanikama, queso, palta (Tempura) · 10 Camarón, queso, cebollín (Palta) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Salmón, palta (Sésamo) · 10 Kanikama, palta (Sésamo) · 10 Palmito, queso (Ciboulette)",
           "precio": 18500,
-          "imagen": "img/promociones/promo11.png",
+          "imagen": "img/optimized/promociones/promo11.jpg",
           "badge": null
         },
         {
@@ -145,7 +163,7 @@
           "nombre": "Promo 12 — 86 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Pollo, queso, cebollín (Env. Palta) · 10 Camarón, palta (Env. Queso) · 10 Pulpo, queso, cebollín (Env. Salmón) · 10 Salmón, queso, palta (Env. Sésamo) · 10 Camarón, queso, cebollín (Env. Ciboulette) · 10 Poke ball · 6 Calamar apanado",
           "precio": 24490,
-          "imagen": "img/promociones/promo12.png",
+          "imagen": "img/optimized/promociones/promo12.jpg",
           "badge": null
         },
         {
@@ -153,7 +171,7 @@
           "nombre": "Promo 13 — 100 Piezas VIP",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 10 Champiñón, queso, cebollín (Tempura) · 10 Camarón tempura, queso, cebollín (Palta) · 10 Pollo apanado, queso, cebollín (Salmón) · 10 Camarón tempura, queso, palta (Sésamo) · 10 Palmito, palta (Queso) · 10 Kanikama, queso, palta (Ciboulette) · 10 Hosomaki de queso, palta · 5 Gyosas a elección · 5 Tori panko",
           "precio": 28490,
-          "imagen": "img/promociones/promo13.png",
+          "imagen": "img/optimized/promociones/promo13.jpg",
           "badge": "Ofertón"
         },
         {
@@ -161,7 +179,7 @@
           "nombre": "Promo Nan — 60 Piezas",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Panko) · 10 Camarón, queso (Env. Palta) · 10 Pollo, palta (Env. Queso) · 10 Camarón, queso (Env. Sésamo) · 10 Kanikama, queso, palta (Ciboulette)",
           "precio": 16000,
-          "imagen": "img/promociones/promonan.png",
+          "imagen": "img/optimized/promociones/promonan.jpg",
           "badge": "Popular"
         },
         {
@@ -169,7 +187,7 @@
           "nombre": "Súper Promo — 100 Piezas",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, queso, cebollín (Tempura) · 20 Camarón, queso, cebollín (Palta) · 20 Pollo apanado, palta (Queso) · 20 Kanikama, queso (Env. Ciboulette) · 20 Hosomaki de queso, palta",
           "precio": 24500,
-          "imagen": "img/promociones/superpromo100.png",
+          "imagen": "img/optimized/promociones/superpromo100.jpg",
           "badge": "Más pedido"
         }
       ]
@@ -184,7 +202,7 @@
           "nombre": "Promo 14 — 30 Piezas Vegetariano",
           "descripcion": "10 Zapallito, queso, cebollín (Panko) · 10 Champiñón, palta (Env. Queso) · 10 Palmito, queso, cebollín (Env. Palta)",
           "precio": 10000,
-          "imagen": "img/promociones/promo14.png",
+          "imagen": "img/optimized/promociones/promo14.jpg",
           "badge": "Vegetariano"
         },
         {
@@ -192,7 +210,7 @@
           "nombre": "Promo 15 — 40 Piezas Vegetariano",
           "descripcion": "10 Champiñón, queso, cebollín (Tempura) · 10 Palmito, queso, cebollín (Panko) · 10 Zapallito italiano, queso (Env. Palta) · 10 Choclo, queso (Env. Ciboulette)",
           "precio": 12990,
-          "imagen": "img/promociones/promo15.png",
+          "imagen": "img/optimized/promociones/promo15.jpg",
           "badge": "Vegetariano"
         }
       ]
@@ -207,7 +225,7 @@
           "nombre": "Todo Pollo — Opción 1 (20 Piezas)",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 5 Pollo apanado, queso, cebollín (Palta) · 5 Pollo apanado, palta (Sésamo)",
           "precio": 7500,
-          "imagen": "img/pollo/todopollo1.png",
+          "imagen": "img/optimized/pollo/todopollo1.jpg",
           "badge": "Pollo"
         },
         {
@@ -215,7 +233,7 @@
           "nombre": "Todo Pollo — Opción 2 (40 Piezas)",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 10 Pollo apanado, palta (Tempura) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Pollo apanado, palta (Queso)",
           "precio": 12990,
-          "imagen": "img/pollo/todopollo2.png",
+          "imagen": "img/optimized/pollo/todopollo2.jpg",
           "badge": "Pollo"
         },
         {
@@ -223,7 +241,7 @@
           "nombre": "Todo Pollo — Opción 3 (60 Piezas)",
           "descripcion": "10 Pollo apanado, palta (Tempura) · 10 Pollo apanado, queso (Panko) · 10 Pollo apanado, queso, cebollín (Panko) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Pollo apanado, palta (Queso) · 10 Pollo apanado, queso (Sésamo)",
           "precio": 16500,
-          "imagen": "img/pollo/todopollo3.png",
+          "imagen": "img/optimized/pollo/todopollo3.jpg",
           "badge": "Pollo"
         }
       ]
@@ -237,24 +255,52 @@
           "id": "carta-01",
           "nombre": "Camarón tempura, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls1.png",
+          "imagen": "img/optimized/rolls/rolls1.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -263,24 +309,52 @@
           "id": "carta-02",
           "nombre": "Pollo apanado, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls2.png",
+          "imagen": "img/optimized/rolls/rolls2.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -289,24 +363,52 @@
           "id": "carta-03",
           "nombre": "Salmón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls3.png",
+          "imagen": "img/optimized/rolls/rolls3.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -315,24 +417,52 @@
           "id": "carta-04",
           "nombre": "Calamar apanado, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -341,24 +471,52 @@
           "id": "carta-05",
           "nombre": "Pulpo, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -367,24 +525,52 @@
           "id": "carta-06",
           "nombre": "Kanikama, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-                { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4200
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "frito",
+                  "nombre": "Frito en Panko o Tempura",
+                  "precio": 5200
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                },
+                {
+                  "id": "salmon",
+                  "nombre": "Salmón",
+                  "precio": 6000
+                }
               ]
             }
           ]
@@ -393,16 +579,36 @@
           "id": "carta-07",
           "nombre": "Camarón, salmón, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-              { "id": "palta", "nombre": "Palta", "precio": 5000 },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo",
+                "precio": 4200
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 5000
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura",
+                "precio": 5200
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 5500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 6000
+              }
             ]
           }
         },
@@ -410,16 +616,36 @@
           "id": "carta-08",
           "nombre": "Calamar apanado, pollo apanado, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-              { "id": "palta", "nombre": "Palta", "precio": 5000 },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo",
+                "precio": 4200
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 5000
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura",
+                "precio": 5200
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 5500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 6000
+              }
             ]
           }
         },
@@ -427,16 +653,36 @@
           "id": "carta-09",
           "nombre": "Champiñón tempura, camarón, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-              { "id": "palta", "nombre": "Palta", "precio": 5000 },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo",
+                "precio": 4200
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 5000
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura",
+                "precio": 5200
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 5500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 6000
+              }
             ]
           }
         },
@@ -444,16 +690,36 @@
           "id": "carta-10",
           "nombre": "Kanikama, camarón tempura, queso",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-              { "id": "palta", "nombre": "Palta", "precio": 5000 },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo",
+                "precio": 4200
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 5000
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura",
+                "precio": 5200
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 5500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 6000
+              }
             ]
           }
         },
@@ -461,16 +727,36 @@
           "id": "carta-11",
           "nombre": "Palmito, pollo apanado, queso, cebollín",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4200 },
-              { "id": "palta", "nombre": "Palta", "precio": 5000 },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura", "precio": 5200 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 5500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 6000 }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo",
+                "precio": 4200
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 5000
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura",
+                "precio": 5200
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 5500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 6000
+              }
             ]
           }
         },
@@ -479,29 +765,77 @@
           "nombre": "Arma tu Roll",
           "descripcion": "Especial · elige 3 ingredientes + 1 envoltura. Precio fijo.",
           "precio": 7000,
-          "imagen": "img/rolls/rolls4.png",
+          "imagen": "img/optimized/rolls/rolls4.jpg",
           "badge": "Nuevo",
           "armaTuRoll": {
             "maxIngredientes": 3,
             "ingredientes": [
-              { "id": "camaron", "nombre": "Camarón tempura" },
-              { "id": "pollo", "nombre": "Pollo apanado" },
-              { "id": "salmon", "nombre": "Salmón" },
-              { "id": "kanikama", "nombre": "Kanikama" },
-              { "id": "calamar", "nombre": "Calamar apanado" },
-              { "id": "pulpo", "nombre": "Pulpo" },
-              { "id": "champinon", "nombre": "Champiñón" },
-              { "id": "palmito", "nombre": "Palmito" },
-              { "id": "queso", "nombre": "Queso crema" },
-              { "id": "palta", "nombre": "Palta" },
-              { "id": "cebollin", "nombre": "Cebollín" }
+              {
+                "id": "camaron",
+                "nombre": "Camarón tempura"
+              },
+              {
+                "id": "pollo",
+                "nombre": "Pollo apanado"
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón"
+              },
+              {
+                "id": "kanikama",
+                "nombre": "Kanikama"
+              },
+              {
+                "id": "calamar",
+                "nombre": "Calamar apanado"
+              },
+              {
+                "id": "pulpo",
+                "nombre": "Pulpo"
+              },
+              {
+                "id": "champinon",
+                "nombre": "Champiñón"
+              },
+              {
+                "id": "palmito",
+                "nombre": "Palmito"
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema"
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta"
+              },
+              {
+                "id": "cebollin",
+                "nombre": "Cebollín"
+              }
             ],
             "envolturas": [
-              { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo" },
-              { "id": "palta", "nombre": "Palta" },
-              { "id": "frito", "nombre": "Frito en Panko o Tempura" },
-              { "id": "queso", "nombre": "Queso crema" },
-              { "id": "salmon", "nombre": "Salmón" }
+              {
+                "id": "cibo-sesamo",
+                "nombre": "Ciboulette o Sésamo"
+              },
+              {
+                "id": "palta",
+                "nombre": "Palta"
+              },
+              {
+                "id": "frito",
+                "nombre": "Frito en Panko o Tempura"
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema"
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón"
+              }
             ]
           }
         }
@@ -516,14 +850,26 @@
           "id": "sin-01",
           "nombre": "Salmón, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz1.png",
+          "imagen": "img/optimized/sinarroz/sinarroz1.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -531,14 +877,26 @@
           "id": "sin-02",
           "nombre": "Camarón, queso, cebollín, palta",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz2.png",
+          "imagen": "img/optimized/sinarroz/sinarroz2.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -546,14 +904,26 @@
           "id": "sin-03",
           "nombre": "Pollo apanado, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz3.png",
+          "imagen": "img/optimized/sinarroz/sinarroz3.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -561,14 +931,26 @@
           "id": "sin-04",
           "nombre": "Pollo, queso, palta, kanikama",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz4.png",
+          "imagen": "img/optimized/sinarroz/sinarroz4.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -576,14 +958,26 @@
           "id": "sin-05",
           "nombre": "Kanikama, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz5.png",
+          "imagen": "img/optimized/sinarroz/sinarroz5.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -591,14 +985,26 @@
           "id": "sin-06",
           "nombre": "Calamar apanado, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz6.png",
+          "imagen": "img/optimized/sinarroz/sinarroz6.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -606,14 +1012,26 @@
           "id": "sin-07",
           "nombre": "Salmón, camarón tempura, queso, palta",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz7.png",
+          "imagen": "img/optimized/sinarroz/sinarroz7.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -621,14 +1039,26 @@
           "id": "sin-08",
           "nombre": "Palmito, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz8.png",
+          "imagen": "img/optimized/sinarroz/sinarroz8.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         },
@@ -636,14 +1066,26 @@
           "id": "sin-09",
           "nombre": "Champiñón, queso, palta, cebollín",
           "descripcion": "Roll de 10 piezas sin arroz · el precio depende de la envoltura.",
-          "imagen": "img/sinarroz/sinarroz9.png",
+          "imagen": "img/optimized/sinarroz/sinarroz9.jpg",
           "badge": null,
           "variaciones": {
             "etiqueta": "Envoltura",
             "opciones": [
-              { "id": "palta", "nombre": "Palta", "precio": 8000 },
-              { "id": "queso", "nombre": "Queso crema", "precio": 8500 },
-              { "id": "salmon", "nombre": "Salmón", "precio": 9000 }
+              {
+                "id": "palta",
+                "nombre": "Palta",
+                "precio": 8000
+              },
+              {
+                "id": "queso",
+                "nombre": "Queso crema",
+                "precio": 8500
+              },
+              {
+                "id": "salmon",
+                "nombre": "Salmón",
+                "precio": 9000
+              }
             ]
           }
         }
@@ -658,22 +1100,42 @@
           "id": "veg-01",
           "nombre": "Palmito, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg1.png",
+          "imagen": "img/optimized/veg/veg1.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -682,22 +1144,42 @@
           "id": "veg-02",
           "nombre": "Champiñón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg2.png",
+          "imagen": "img/optimized/veg/veg2.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -706,22 +1188,42 @@
           "id": "veg-03",
           "nombre": "Choclo, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg3.png",
+          "imagen": "img/optimized/veg/veg3.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -730,22 +1232,42 @@
           "id": "veg-04",
           "nombre": "Pepino, pimentón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg4.png",
+          "imagen": "img/optimized/veg/veg4.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -754,22 +1276,42 @@
           "id": "veg-05",
           "nombre": "Pimentón, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg5.png",
+          "imagen": "img/optimized/veg/veg5.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -778,22 +1320,42 @@
           "id": "veg-06",
           "nombre": "Champiñón, choclo, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg6.png",
+          "imagen": "img/optimized/veg/veg6.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -802,22 +1364,42 @@
           "id": "veg-07",
           "nombre": "Zapallito apanado, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg7.png",
+          "imagen": "img/optimized/veg/veg7.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -826,22 +1408,42 @@
           "id": "veg-08",
           "nombre": "Palmito, choclo, queso, cebollín o palta",
           "descripcion": "Roll de 10 piezas · el precio depende de la envoltura que elijas.",
-          "imagen": "img/veg/veg8.png",
+          "imagen": "img/optimized/veg/veg8.jpg",
           "badge": "Vegetariano",
           "variaciones": [
             {
               "etiqueta": "Complemento",
               "opciones": [
-                { "id": "cebollin", "nombre": "Cebollín", "precio": 0 },
-                { "id": "palta", "nombre": "Palta", "precio": 0 }
+                {
+                  "id": "cebollin",
+                  "nombre": "Cebollín",
+                  "precio": 0
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 0
+                }
               ]
             },
             {
               "etiqueta": "Envoltura",
               "opciones": [
-                { "id": "cibo-sesamo", "nombre": "Ciboulette o Sésamo", "precio": 4500 },
-                { "id": "palta", "nombre": "Palta", "precio": 5000 },
-                { "id": "queso", "nombre": "Queso crema", "precio": 5500 }
+                {
+                  "id": "cibo-sesamo",
+                  "nombre": "Ciboulette o Sésamo",
+                  "precio": 4500
+                },
+                {
+                  "id": "palta",
+                  "nombre": "Palta",
+                  "precio": 5000
+                },
+                {
+                  "id": "queso",
+                  "nombre": "Queso crema",
+                  "precio": 5500
+                }
               ]
             }
           ]
@@ -858,7 +1460,7 @@
           "nombre": "Sushi Burger — Pollo",
           "descripcion": "Pollo, queso crema, palta, cebollín.",
           "precio": 7300,
-          "imagen": "img/burguer/burguer1.png",
+          "imagen": "img/optimized/burguer/burguer1.jpg",
           "badge": null
         },
         {
@@ -866,7 +1468,7 @@
           "nombre": "Sushi Burger — Kanikama",
           "descripcion": "Kanikama, queso, palta, cebollín.",
           "precio": 7000,
-          "imagen": "img/burguer/burguer2.png",
+          "imagen": "img/optimized/burguer/burguer2.jpg",
           "badge": null
         },
         {
@@ -874,7 +1476,7 @@
           "nombre": "Sushi Burger — Camarón Tempura",
           "descripcion": "Camarón tempura, queso, palta, cebollín.",
           "precio": 7500,
-          "imagen": "img/burguer/burguer3.png",
+          "imagen": "img/optimized/burguer/burguer3.jpg",
           "badge": null
         },
         {
@@ -882,7 +1484,7 @@
           "nombre": "Sushi Burger — Salmón",
           "descripcion": "Salmón, queso, palta, cebollín.",
           "precio": 8000,
-          "imagen": "img/burguer/burguer4.png",
+          "imagen": "img/optimized/burguer/burguer4.jpg",
           "badge": null
         },
         {
@@ -890,7 +1492,7 @@
           "nombre": "Sushi Burger — Salmón y Camarón",
           "descripcion": "Salmón, camarón tempura, queso, palta.",
           "precio": 8490,
-          "imagen": "img/burguer/burguer5.png",
+          "imagen": "img/optimized/burguer/burguer5.jpg",
           "badge": null
         },
         {
@@ -898,7 +1500,7 @@
           "nombre": "Sushi Burger — Carne",
           "descripcion": "Carne salteada, queso, palta, cebollín.",
           "precio": 7990,
-          "imagen": "img/burguer/burguer6.png",
+          "imagen": "img/optimized/burguer/burguer6.jpg",
           "badge": null
         },
         {
@@ -906,7 +1508,7 @@
           "nombre": "Sushi Burger — Calamar",
           "descripcion": "Calamar apanado, queso, palta, cebollín.",
           "precio": 7490,
-          "imagen": "img/burguer/burguer7.png",
+          "imagen": "img/optimized/burguer/burguer7.jpg",
           "badge": null
         },
         {
@@ -914,7 +1516,7 @@
           "nombre": "Sushi Burger — Champiñón",
           "descripcion": "Champiñón tempura, queso, palta, cebollín.",
           "precio": 7000,
-          "imagen": "img/burguer/burguer8.png",
+          "imagen": "img/optimized/burguer/burguer8.jpg",
           "badge": "Vegetariano"
         }
       ]
@@ -929,7 +1531,7 @@
           "nombre": "Gohan 1 — Camarón Tempura",
           "descripcion": "Camarón tempura, queso, palta, cebollín.",
           "precio": 6000,
-          "imagen": "img/gohan/gohan1.png",
+          "imagen": "img/optimized/gohan/gohan1.jpg",
           "badge": null
         },
         {
@@ -937,7 +1539,7 @@
           "nombre": "Gohan 2 — Pollo",
           "descripcion": "Pollo apanado, queso, palta, cebollín.",
           "precio": 5500,
-          "imagen": "img/gohan/gohan2.png",
+          "imagen": "img/optimized/gohan/gohan2.jpg",
           "badge": null
         },
         {
@@ -945,7 +1547,7 @@
           "nombre": "Gohan 3 — Salmón",
           "descripcion": "Salmón, queso, palta, cebollín.",
           "precio": 6490,
-          "imagen": "img/gohan/gohan3.png",
+          "imagen": "img/optimized/gohan/gohan3.jpg",
           "badge": null
         },
         {
@@ -953,7 +1555,7 @@
           "nombre": "Gohan 4 — Kanikama",
           "descripcion": "Kanikama, queso, palta, cebollín.",
           "precio": 5300,
-          "imagen": "img/gohan/gohan4.png",
+          "imagen": "img/optimized/gohan/gohan4.jpg",
           "badge": null
         },
         {
@@ -961,7 +1563,7 @@
           "nombre": "Gohan 5 — Salmón y Camarón",
           "descripcion": "Salmón, camarón tempura, queso, palta.",
           "precio": 6990,
-          "imagen": "img/gohan/gohan5.png",
+          "imagen": "img/optimized/gohan/gohan5.jpg",
           "badge": null
         },
         {
@@ -969,7 +1571,7 @@
           "nombre": "Gohan 6 — Pulpo y Salmón",
           "descripcion": "Pulpo, salmón, queso, palta, cebollín.",
           "precio": 7490,
-          "imagen": "img/gohan/gohan6.png",
+          "imagen": "img/optimized/gohan/gohan6.jpg",
           "badge": null
         },
         {
@@ -977,7 +1579,7 @@
           "nombre": "Gohan 7 — Camarón, Pulpo y Salmón",
           "descripcion": "Camarón tempura, pulpo, salmón, palta.",
           "precio": 7990,
-          "imagen": "img/gohan/gohan7.png",
+          "imagen": "img/optimized/gohan/gohan7.jpg",
           "badge": null
         },
         {
@@ -985,7 +1587,7 @@
           "nombre": "Gohan 8 — Vegetariano",
           "descripcion": "Champiñón, palmito, palta, cebollín.",
           "precio": 5500,
-          "imagen": "img/gohan/gohan8.png",
+          "imagen": "img/optimized/gohan/gohan8.jpg",
           "badge": "Vegetariano"
         },
         {
@@ -993,7 +1595,7 @@
           "nombre": "Gohan 9 — Arma tu Gohan",
           "descripcion": "Personalizado con 4 ingredientes a elección.",
           "precio": 8500,
-          "imagen": "img/gohan/gohan9.png",
+          "imagen": "img/optimized/gohan/gohan9.jpg",
           "badge": "Nuevo"
         }
       ]
@@ -1008,7 +1610,7 @@
           "nombre": "Sashimi de Pulpo",
           "descripcion": "9 cortes.",
           "precio": 8500,
-          "imagen": "img/s/sashimipulpo.png",
+          "imagen": "img/optimized/s/sashimipulpo.jpg",
           "badge": null
         },
         {
@@ -1016,7 +1618,7 @@
           "nombre": "Sashimi de Salmón",
           "descripcion": "9 cortes.",
           "precio": 8500,
-          "imagen": "img/s/sashimisalmon.png",
+          "imagen": "img/optimized/s/sashimisalmon.jpg",
           "badge": null
         },
         {
@@ -1024,7 +1626,7 @@
           "nombre": "Sashimi Mixto",
           "descripcion": "15 cortes.",
           "precio": 14500,
-          "imagen": "img/s/sashimimixto.png",
+          "imagen": "img/optimized/s/sashimimixto.jpg",
           "badge": null
         }
       ]
@@ -1039,7 +1641,7 @@
           "nombre": "Hosomaki Queso y Palta",
           "descripcion": "10 piezas.",
           "precio": 2200,
-          "imagen": "img/hosomaki/hosomaki1.png",
+          "imagen": "img/optimized/hosomaki/hosomaki1.jpg",
           "badge": null
         },
         {
@@ -1047,7 +1649,7 @@
           "nombre": "Hosomaki Kanikama y Palta",
           "descripcion": "10 piezas.",
           "precio": 2400,
-          "imagen": "img/hosomaki/hosomaki2.png",
+          "imagen": "img/optimized/hosomaki/hosomaki2.jpg",
           "badge": null
         },
         {
@@ -1055,7 +1657,7 @@
           "nombre": "Hosomaki Pollo y Palta",
           "descripcion": "10 piezas.",
           "precio": 2500,
-          "imagen": "img/hosomaki/hosomaki3.png",
+          "imagen": "img/optimized/hosomaki/hosomaki3.jpg",
           "badge": null
         },
         {
@@ -1063,7 +1665,7 @@
           "nombre": "Hosomaki Camarón y Queso",
           "descripcion": "10 piezas.",
           "precio": 2700,
-          "imagen": "img/hosomaki/hosomaki4.png",
+          "imagen": "img/optimized/hosomaki/hosomaki4.jpg",
           "badge": null
         },
         {
@@ -1071,7 +1673,7 @@
           "nombre": "Hosomaki Salmón y Queso",
           "descripcion": "10 piezas.",
           "precio": 2900,
-          "imagen": "img/hosomaki/hosomaki5.png",
+          "imagen": "img/optimized/hosomaki/hosomaki5.jpg",
           "badge": null
         }
       ]
@@ -1086,7 +1688,7 @@
           "nombre": "Futomaki Queso y Palta",
           "descripcion": "10 piezas · queso, palta, cebollín.",
           "precio": 2800,
-          "imagen": "img/futomaki/futomaki.png",
+          "imagen": "img/optimized/futomaki/futomaki.jpg",
           "badge": null
         },
         {
@@ -1094,7 +1696,7 @@
           "nombre": "Futomaki Kanikama",
           "descripcion": "10 piezas · kanikama, queso, palta.",
           "precio": 3000,
-          "imagen": "img/futomaki/futomaki2.png",
+          "imagen": "img/optimized/futomaki/futomaki2.jpg",
           "badge": null
         },
         {
@@ -1102,7 +1704,7 @@
           "nombre": "Futomaki Camarón",
           "descripcion": "10 piezas · camarón, queso, cebollín.",
           "precio": 3300,
-          "imagen": "img/futomaki/futomaki3.png",
+          "imagen": "img/optimized/futomaki/futomaki3.jpg",
           "badge": null
         },
         {
@@ -1110,7 +1712,7 @@
           "nombre": "Futomaki Salmón",
           "descripcion": "10 piezas · salmón, palta, queso.",
           "precio": 3500,
-          "imagen": "img/futomaki/futomaki4.png",
+          "imagen": "img/optimized/futomaki/futomaki4.jpg",
           "badge": null
         },
         {
@@ -1118,7 +1720,7 @@
           "nombre": "Futomaki Pulpo",
           "descripcion": "10 piezas · pulpo, queso, palta.",
           "precio": 3600,
-          "imagen": "img/futomaki/futomaki5.png",
+          "imagen": "img/optimized/futomaki/futomaki5.jpg",
           "badge": null
         }
       ]
@@ -1133,7 +1735,7 @@
           "nombre": "Nigiri de Kanikama",
           "descripcion": "2 unidades.",
           "precio": 2300,
-          "imagen": "img/nigiris/nigiri1.png",
+          "imagen": "img/optimized/nigiris/nigiri1.jpg",
           "badge": null
         },
         {
@@ -1141,7 +1743,7 @@
           "nombre": "Nigiri de Camarón Cocido",
           "descripcion": "2 unidades.",
           "precio": 2500,
-          "imagen": "img/nigiris/nigiri2.png",
+          "imagen": "img/optimized/nigiris/nigiri2.jpg",
           "badge": null
         },
         {
@@ -1149,7 +1751,7 @@
           "nombre": "Nigiri de Salmón",
           "descripcion": "2 unidades.",
           "precio": 2700,
-          "imagen": "img/nigiris/nigiri3.png",
+          "imagen": "img/optimized/nigiris/nigiri3.jpg",
           "badge": null
         },
         {
@@ -1157,7 +1759,7 @@
           "nombre": "Nigiri de Pulpo",
           "descripcion": "2 unidades.",
           "precio": 2800,
-          "imagen": "img/nigiris/nigiri4.png",
+          "imagen": "img/optimized/nigiris/nigiri4.jpg",
           "badge": null
         }
       ]
@@ -1172,7 +1774,7 @@
           "nombre": "Gyosas de Pollo",
           "descripcion": "5 unidades.",
           "precio": 3500,
-          "imagen": "img/yosas/yosa1.png",
+          "imagen": "img/optimized/yosas/yosa1.jpg",
           "badge": null
         },
         {
@@ -1180,7 +1782,7 @@
           "nombre": "Gyosas de Verduras",
           "descripcion": "5 unidades.",
           "precio": 3500,
-          "imagen": "img/yosas/yosa2.png",
+          "imagen": "img/optimized/yosas/yosa2.jpg",
           "badge": "Vegetariano"
         },
         {
@@ -1188,7 +1790,7 @@
           "nombre": "Gyosas de Cerdo",
           "descripcion": "5 unidades.",
           "precio": 3700,
-          "imagen": "img/yosas/yosa3.png",
+          "imagen": "img/optimized/yosas/yosa3.jpg",
           "badge": null
         },
         {
@@ -1196,7 +1798,7 @@
           "nombre": "Gyosas de Camarón",
           "descripcion": "5 unidades.",
           "precio": 4000,
-          "imagen": "img/yosas/yosa4.png",
+          "imagen": "img/optimized/yosas/yosa4.jpg",
           "badge": null
         }
       ]
@@ -1211,7 +1813,7 @@
           "nombre": "Hand Roll de Pollo",
           "descripcion": "Pollo, queso, cebollín.",
           "precio": 3000,
-          "imagen": "img/handroll/hand1.png",
+          "imagen": "img/optimized/handroll/hand1.jpg",
           "badge": null
         },
         {
@@ -1219,7 +1821,7 @@
           "nombre": "Hand Roll de Kanikama",
           "descripcion": "Kanikama, queso, cebollín.",
           "precio": 3000,
-          "imagen": "img/handroll/hand2.png",
+          "imagen": "img/optimized/handroll/hand2.jpg",
           "badge": null
         },
         {
@@ -1227,7 +1829,7 @@
           "nombre": "Hand Roll de Champiñón",
           "descripcion": "Champiñón, queso, cebollín.",
           "precio": 3000,
-          "imagen": "img/handroll/hand3.png",
+          "imagen": "img/optimized/handroll/hand3.jpg",
           "badge": "Vegetariano"
         },
         {
@@ -1235,7 +1837,7 @@
           "nombre": "Hand Roll de Camarón",
           "descripcion": "Camarón, queso, cebollín.",
           "precio": 3500,
-          "imagen": "img/handroll/hand4.png",
+          "imagen": "img/optimized/handroll/hand4.jpg",
           "badge": null
         },
         {
@@ -1243,7 +1845,7 @@
           "nombre": "Hand Roll de Salmón",
           "descripcion": "Salmón, queso, cebollín.",
           "precio": 3500,
-          "imagen": "img/handroll/hand5.png",
+          "imagen": "img/optimized/handroll/hand5.jpg",
           "badge": null
         }
       ]
@@ -1258,7 +1860,7 @@
           "nombre": "Papas Fritas Chica",
           "descripcion": "Porción individual.",
           "precio": 2500,
-          "imagen": "img/compartir/papa1.png",
+          "imagen": "img/optimized/compartir/papa1.jpg",
           "badge": null
         },
         {
@@ -1266,7 +1868,7 @@
           "nombre": "Papas Fritas Mediana",
           "descripcion": "Para compartir.",
           "precio": 3500,
-          "imagen": "img/compartir/papa2.png",
+          "imagen": "img/optimized/compartir/papa2.jpg",
           "badge": null
         },
         {
@@ -1274,7 +1876,7 @@
           "nombre": "Poke Ball",
           "descripcion": "10 unidades.",
           "precio": 3500,
-          "imagen": "img/compartir/balls.png",
+          "imagen": "img/optimized/compartir/balls.jpg",
           "badge": null
         },
         {
@@ -1282,7 +1884,7 @@
           "nombre": "Arrollado Primavera",
           "descripcion": "5 unidades.",
           "precio": 4000,
-          "imagen": "img/compartir/arrollado.png",
+          "imagen": "img/optimized/compartir/arrollado.jpg",
           "badge": null
         },
         {
@@ -1290,7 +1892,7 @@
           "nombre": "Papas Fritas Grande",
           "descripcion": "Para toda la mesa.",
           "precio": 4500,
-          "imagen": "img/compartir/papa3.png",
+          "imagen": "img/optimized/compartir/papa3.jpg",
           "badge": null
         },
         {
@@ -1298,7 +1900,7 @@
           "nombre": "Arrollado Jamón Queso",
           "descripcion": "5 unidades.",
           "precio": 4500,
-          "imagen": "img/compartir/arrollado2.png",
+          "imagen": "img/optimized/compartir/arrollado2.jpg",
           "badge": null
         },
         {
@@ -1306,7 +1908,7 @@
           "nombre": "Pollo Apanado",
           "descripcion": "5 unidades.",
           "precio": 5000,
-          "imagen": "img/compartir/pollo.png",
+          "imagen": "img/optimized/compartir/pollo.jpg",
           "badge": null
         },
         {
@@ -1314,7 +1916,7 @@
           "nombre": "Empanadas de Queso",
           "descripcion": "5 unidades.",
           "precio": 5500,
-          "imagen": "img/compartir/empanada.png",
+          "imagen": "img/optimized/compartir/empanada.jpg",
           "badge": null
         },
         {
@@ -1322,7 +1924,7 @@
           "nombre": "Salchipapas",
           "descripcion": "Papas con vienesa.",
           "precio": 5500,
-          "imagen": "img/compartir/salchipapa.png",
+          "imagen": "img/optimized/compartir/salchipapa.jpg",
           "badge": null
         },
         {
@@ -1330,7 +1932,7 @@
           "nombre": "Calamar Apanado",
           "descripcion": "15 unidades.",
           "precio": 6500,
-          "imagen": "img/compartir/calamar.png ",
+          "imagen": "img/optimized/compartir/calamar.jpg",
           "badge": null
         },
         {
@@ -1338,7 +1940,7 @@
           "nombre": "Camarón Tempura",
           "descripcion": "5 unidades.",
           "precio": 6500,
-          "imagen": "img/compartir/camaron.png",
+          "imagen": "img/optimized/compartir/camaron.jpg",
           "badge": null
         },
         {
@@ -1346,7 +1948,7 @@
           "nombre": "Camarón Apanado",
           "descripcion": "6 unidades.",
           "precio": 7000,
-          "imagen": "img/compartir/camaron2.png",
+          "imagen": "img/optimized/compartir/camaron2.jpg",
           "badge": null
         }
       ]
@@ -1361,7 +1963,7 @@
           "nombre": "Lata 350cc",
           "descripcion": "Bebida en lata.",
           "precio": 1500,
-          "imagen": "img/bebidas/lata.png",
+          "imagen": "img/optimized/bebidas/lata.jpg",
           "badge": null
         },
         {
@@ -1369,7 +1971,7 @@
           "nombre": "Agua 1 Litro",
           "descripcion": "Con o sin gas.",
           "precio": 1500,
-          "imagen": "img/bebidas/agua.png",
+          "imagen": "img/optimized/bebidas/agua.jpg",
           "badge": null
         },
         {
@@ -1377,7 +1979,7 @@
           "nombre": "Score 473ml",
           "descripcion": "Bebida energética.",
           "precio": 1800,
-          "imagen": "img/bebidas/score.png",
+          "imagen": "img/optimized/bebidas/score.jpg",
           "badge": null
         },
         {
@@ -1385,7 +1987,7 @@
           "nombre": "Jugo 1.5 Litros",
           "descripcion": "Para compartir.",
           "precio": 2200,
-          "imagen": "img/bebidas/jugo.png",
+          "imagen": "img/optimized/bebidas/jugo.jpg",
           "badge": null
         },
         {
@@ -1393,7 +1995,7 @@
           "nombre": "Bebida 1.5 Litros",
           "descripcion": "Para toda la mesa.",
           "precio": 2500,
-          "imagen": "img/bebidas/bebida.png",
+          "imagen": "img/optimized/bebidas/bebida.jpg",
           "badge": null
         }
       ]
@@ -1408,7 +2010,7 @@
           "nombre": "Salsa Soya",
           "descripcion": "Incluida en el pedido.",
           "precio": 0,
-          "imagen": "img/salsas/soya.png",
+          "imagen": "img/optimized/salsas/soya.jpg",
           "badge": "Incluido"
         },
         {
@@ -1416,7 +2018,7 @@
           "nombre": "Salsa Teriyaki",
           "descripcion": "Incluida en el pedido.",
           "precio": 0,
-          "imagen": "img/salsas/teriyaki.png",
+          "imagen": "img/optimized/salsas/teriyaki.jpg",
           "badge": "Incluido"
         },
         {
@@ -1424,7 +2026,7 @@
           "nombre": "Salsa Acevichado",
           "descripcion": "Salsa de la casa.",
           "precio": 1200,
-          "imagen": "img/salsas/acevichada.png",
+          "imagen": "img/optimized/salsas/acevichada.jpg",
           "badge": null
         },
         {
@@ -1432,7 +2034,7 @@
           "nombre": "Salsa Maracuyá",
           "descripcion": "Salsa de la casa.",
           "precio": 1200,
-          "imagen": "img/salsas/maracuya.png",
+          "imagen": "img/optimized/salsas/maracuya.jpg",
           "badge": null
         },
         {
@@ -1440,7 +2042,7 @@
           "nombre": "Salsa Tamarindo",
           "descripcion": "Salsa de la casa.",
           "precio": 1200,
-          "imagen": "img/salsas/tamarindo.png",
+          "imagen": "img/optimized/salsas/tamarindo.png",
           "badge": null
         },
         {
@@ -1448,7 +2050,7 @@
           "nombre": "Salsa Huancaína",
           "descripcion": "Salsa de la casa.",
           "precio": 1200,
-          "imagen": "img/salsas/huancaina.png",
+          "imagen": "img/optimized/salsas/huancaina.png",
           "badge": null
         }
       ]
