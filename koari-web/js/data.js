@@ -2,11 +2,11 @@
 // Carga el JSON de productos y negocio. Reemplazar data/products.json
 // con los datos reales (precios, fotos, categorías) cuando el cliente los entregue.
 
-let DATA = null;
+export let DATA = null;
 
-async function cargarDatos() {
+export async function cargarDatos() {
   try {
-    const res = await fetch('data/products.json?v=6');
+    const res = await fetch('data/products.json?v=7');
     if (!res.ok) throw new Error(`No se pudo cargar el catálogo (${res.status})`);
     DATA = await res.json();
     if (!DATA?.negocio || !Array.isArray(DATA?.categorias)) {
@@ -17,7 +17,8 @@ async function cargarDatos() {
     console.error('Error cargando datos:', err);
     const container = document.getElementById('productos-container');
     if (container) {
-      container.innerHTML = '<section class="estado-carga" role="alert"><h2>No pudimos cargar el menú</h2><p>Revisa tu conexión e inténtalo nuevamente.</p><button type="button" onclick="location.reload()">Reintentar</button></section>';
+      container.innerHTML = '<section class="estado-carga" role="alert"><h2>No pudimos cargar el menú</h2><p>Revisa tu conexión e inténtalo nuevamente.</p><button type="button">Reintentar</button></section>';
+      container.querySelector('button').addEventListener('click', () => location.reload());
     }
     return null;
   }

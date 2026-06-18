@@ -1,15 +1,19 @@
 // cart.js
 // Lógica del carrito: estado en memoria (sin localStorage por restricción de artifacts,
 // pero en producción real fuera de artifacts SÍ se puede usar localStorage para persistencia).
+import { DATA } from './data.js?v=8';
 
-const carrito = {
+export const carrito = {
   items: {}, // { productoId: { producto, cantidad } }
 
   cargar() {
     try {
       const guardado = JSON.parse(localStorage.getItem('sushinan-carrito') || 'null');
       const versionActual = DATA?.negocio?.catalogo_version || 1;
-      if (!guardado || guardado.version !== versionActual || !guardado.items) return;
+      if (!guardado || !guardado.expira || guardado.expira <= Date.now() || guardado.version !== versionActual || !guardado.items) {
+        localStorage.removeItem('sushinan-carrito');
+        return;
+      }
       const catalogo = new Map(DATA.categorias.flatMap(c => c.productos).map(p => [p.id, p]));
       this.items = Object.fromEntries(
         Object.entries(guardado.items).filter(([, item]) => {
@@ -30,6 +34,7 @@ const carrito = {
     try {
       localStorage.setItem('sushinan-carrito', JSON.stringify({
         version: DATA?.negocio?.catalogo_version || 1,
+        expira: Date.now() + 7 * 86_400_000,
         items: this.items
       }));
     } catch (err) {
@@ -84,11 +89,10 @@ const carrito = {
 
   actualizar() {
     this.guardar();
-    renderCarrito();
-    renderBotonesCantidad();
+    document.dispatchEvent(new CustomEvent('carrito:actualizado'));
   }
 };
 
-function formatearPrecio(valor) {
+export function formatearPrecio(valor) {
   return '$' + valor.toLocaleString('es-CL');
 }

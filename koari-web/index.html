@@ -37,7 +37,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=45">
+  <link rel="stylesheet" href="css/styles.css?v=49">
 </head>
 <body>
 
@@ -74,11 +74,17 @@
 
   <!-- BARRA BÚSQUEDA -->
   <div class="busqueda-barra">
-    <div class="busqueda-wrap">
-      <svg class="busqueda-icono" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-      <label class="sr-only" for="busqueda-input">Buscar productos</label>
-      <input type="search" id="busqueda-input" class="busqueda-input" placeholder="Buscar producto..." autocomplete="off" spellcheck="false">
-      <button class="busqueda-limpiar" id="busqueda-limpiar" aria-label="Limpiar">✕</button>
+    <div class="busqueda-acciones">
+      <div class="busqueda-wrap">
+        <svg class="busqueda-icono" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+        <label class="sr-only" for="busqueda-input">Buscar productos</label>
+        <input type="search" id="busqueda-input" class="busqueda-input" placeholder="Buscar producto..." autocomplete="off" spellcheck="false">
+        <button class="busqueda-limpiar" id="busqueda-limpiar" aria-label="Limpiar">✕</button>
+      </div>
+      <button class="favoritos-filtro" id="favoritos-filtro" type="button" aria-pressed="false" aria-label="Mostrar productos favoritos">
+        <span aria-hidden="true">♥</span>
+        <span id="favoritos-count">0</span>
+      </button>
     </div>
     <p class="busqueda-estado sr-only" id="busqueda-estado" aria-live="polite"></p>
   </div>
@@ -114,6 +120,9 @@
           <span>Agrega algo delicioso</span>
         </div>
       </div>
+      <button class="repetir-pedido" id="repetir-ultimo-pedido" type="button" hidden>
+        <span aria-hidden="true">↻</span> Repetir mi último pedido
+      </button>
 
       <!-- DATOS DEL CLIENTE -->
       <div class="cliente-seccion">
@@ -126,26 +135,77 @@
         <p class="pago-titulo">TUS DATOS</p>
         <div class="cliente-campos">
           <div class="cliente-campo">
-            <label for="cliente-nombre">Nombre</label>
+            <label for="cliente-nombre">Nombre <span aria-hidden="true">*</span></label>
             <input type="text" id="cliente-nombre" placeholder="¿Cómo te llamas?" autocomplete="name" required>
           </div>
           <div class="cliente-campo">
-            <label for="cliente-telefono">Teléfono</label>
+            <label for="cliente-telefono">Teléfono <span aria-hidden="true">*</span></label>
             <input type="tel" id="cliente-telefono" placeholder="+56 9 XXXX XXXX" autocomplete="tel" inputmode="tel" required>
           </div>
           <div class="cliente-campo campo-delivery">
-            <label for="cliente-direccion">Dirección</label>
+            <label for="cliente-direccion">Dirección <span aria-hidden="true">*</span></label>
             <input type="text" id="cliente-direccion" placeholder="Calle y número" autocomplete="street-address">
           </div>
+          <a class="como-llegar campo-retiro" id="como-llegar" href="#" target="_blank" rel="noopener noreferrer" hidden>
+            <span aria-hidden="true">📍</span>
+            <span>Cómo llegar al local</span>
+          </a>
           <div class="cliente-campo campo-delivery">
-            <label for="cliente-comuna">Comuna</label>
+            <label for="cliente-comuna">Comuna <span aria-hidden="true">*</span></label>
             <select id="cliente-comuna">
               <option value="">Selecciona tu comuna...</option>
             </select>
           </div>
           <div class="cliente-campo">
-            <label for="cliente-nota">Nota (opcional)</label>
-            <input type="text" id="cliente-nota" placeholder="Ej: dejar en conserjería, sin ají...">
+            <label for="cliente-nota">Nota o alergias (opcional)</label>
+            <input type="text" id="cliente-nota" placeholder="Ej: alergia al camarón, sin ají...">
+          </div>
+          <div class="pedido-opciones">
+            <p class="pago-titulo">OPCIONES DEL PEDIDO</p>
+            <div class="cliente-campo">
+              <label for="cliente-palillos">Cantidad de palillos</label>
+              <select id="cliente-palillos">
+                <option value="0">No necesito</option>
+                <option value="1">1 par</option>
+                <option value="2">2 pares</option>
+                <option value="3">3 pares</option>
+                <option value="4">4 pares</option>
+                <option value="5">5 pares</option>
+                <option value="6">6 pares</option>
+                <option value="7">7 pares</option>
+                <option value="8">8 pares</option>
+                <option value="9">9 pares</option>
+                <option value="10">10 pares</option>
+              </select>
+            </div>
+            <div class="preferencias-checks">
+              <label><input type="checkbox" id="cliente-sin-soya"> Sin soya</label>
+              <label><input type="checkbox" id="cliente-sin-wasabi"> Sin wasabi</label>
+            </div>
+          </div>
+          <div class="programacion-pedido">
+            <label class="programar-toggle">
+              <input type="checkbox" id="programar-pedido">
+              <span>Programar pedido</span>
+            </label>
+            <div class="programacion-campos" id="programacion-campos" hidden>
+              <div class="cliente-campo">
+                <label for="cliente-fecha-pedido">Fecha</label>
+                <input type="date" id="cliente-fecha-pedido">
+              </div>
+              <div class="cliente-campo">
+                <label for="cliente-hora-pedido">Hora deseada</label>
+                <input type="time" id="cliente-hora-pedido" step="900">
+              </div>
+            </div>
+          </div>
+          <div class="privacidad-local">
+            <label class="recordar-datos">
+              <input type="checkbox" id="recordar-datos">
+              <span>Recordar mis datos durante 30 días en este dispositivo</span>
+            </label>
+            <p>Tu información se guarda solamente en este navegador y se utiliza para completar futuros pedidos.</p>
+            <button id="borrar-datos" type="button">Borrar mis datos del dispositivo</button>
           </div>
           <p class="form-error" id="form-error" role="alert" aria-live="assertive"></p>
         </div>
@@ -212,6 +272,7 @@
       <div class="modal-img-wrap">
         <img src="" alt="" class="modal-img" id="modal-img" width="600" height="360" decoding="async">
         <span class="modal-badge" id="modal-badge"></span>
+        <button class="modal-compartir" id="modal-compartir" type="button" aria-label="Compartir este producto">↗</button>
       </div>
       <div class="modal-info">
         <h2 class="modal-nombre" id="modal-nombre"></h2>
@@ -293,12 +354,10 @@
     </div>
     <div class="footer__bottom">
       <p>© <span id="footer-year"></span> Sushi Nan · Todos los derechos reservados · Pedidos sujetos a disponibilidad</p>
+      <p class="footer__politica">Precios y disponibilidad se confirman por WhatsApp. Informa cualquier alergia en la nota del pedido.</p>
     </div>
   </footer>
 
-  <script src="js/data.js?v=6"></script>
-  <script src="js/placeholders.js?v=2"></script>
-  <script src="js/cart.js?v=7"></script>
-  <script src="js/app.js?v=21"></script>
+  <script type="module" src="js/app.js?v=29"></script>
 </body>
 </html>

@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "sushinan",
-      "runtimeExecutable": "python",
-      "runtimeArgs": ["-m", "http.server", "8787", "--directory", "koari-web"],
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "koari-web", "-l", "8787"],
       "port": 8787
     }
   ]

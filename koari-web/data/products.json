@@ -1,7 +1,7 @@
 {
   "negocio": {
     "nombre": "Sushi Nan",
-    "catalogo_version": 1,
+    "catalogo_version": 2,
     "tagline": "El sabor que prende fuego",
     "telefono_whatsapp": "56936413434",
     "telefono_display": "+56 9 3641 3434",
@@ -88,7 +88,7 @@
         },
         {
           "id": "promo-3",
-          "nombre": "Promo 3 — 36 Piezas Mix",
+          "nombre": "Promo 3 — 36 Piezas Mix + Bebida 350 ml",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Kanikama, palta (Env. Ciboulette) · 10 Camarón, queso, cebollín (Env. Palta) · 5 Poke ball · 1 Bebida 350ml",
           "precio": 12500,
           "imagen": "img/optimized/promociones/promo3.jpg",
@@ -128,7 +128,7 @@
         },
         {
           "id": "promo-8",
-          "nombre": "Promo 8 — 56 Piezas",
+          "nombre": "Promo 8 — 56 Piezas + Bebida 1.5 L",
           "descripcion": "20 Pollo, queso, cebollín (Panko) · 10 Champiñón, palta (Env. Queso) · 10 Kanikama, queso, cebollín (Env. Salmón) · 10 Camarón, queso (Env. Palta) · 5 Poke ball · 1 Bebida 1.5lt",
           "precio": 16990,
           "imagen": "img/optimized/promociones/promo8.jpg",
