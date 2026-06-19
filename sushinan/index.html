@@ -3,29 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sushi Nan — Pedidos Online</title>
-  <meta name="description" content="Pide tus rolls y combos favoritos de Sushi Nan directamente por WhatsApp.">
+  <title>Sushi en Recoleta y comunas cercanas | Sushi Nan</title>
+  <meta name="description" content="Sushi delivery en Recoleta, Conchalí, Huechuraba e Independencia. Revisa la carta de Sushi Nan y pide rolls, promociones y combos por WhatsApp.">
   <meta name="theme-color" content="#e8112d">
-  <meta name="robots" content="index,follow">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <link rel="canonical" href="https://www.sushinan.cl/">
+  <link rel="alternate" hreflang="es-cl" href="https://www.sushinan.cl/">
   <meta property="og:type" content="restaurant">
   <meta property="og:locale" content="es_CL">
-  <meta property="og:title" content="Sushi Nan — Pedidos Online">
-  <meta property="og:description" content="Rolls, promociones y sushi con retiro o delivery en Recoleta y comunas cercanas.">
-  <meta property="og:image" content="img/logo-sushinan.png">
+  <meta property="og:site_name" content="Sushi Nan">
+  <meta property="og:url" content="https://www.sushinan.cl/">
+  <meta property="og:title" content="Sushi en Recoleta y comunas cercanas | Sushi Nan">
+  <meta property="og:description" content="Carta online y delivery de sushi en Recoleta, Conchalí, Huechuraba e Independencia.">
+  <meta property="og:image" content="https://www.sushinan.cl/img/logo-sushinan.png">
+  <meta property="og:image:alt" content="Logo de Sushi Nan">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Sushi en Recoleta y comunas cercanas | Sushi Nan">
+  <meta name="twitter:description" content="Carta online y delivery de sushi en Recoleta, Conchalí, Huechuraba e Independencia.">
+  <meta name="twitter:image" content="https://www.sushinan.cl/img/logo-sushinan.png">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Restaurant",
+    "@id": "https://www.sushinan.cl/#restaurant",
     "name": "Sushi Nan",
+    "url": "https://www.sushinan.cl/",
+    "image": "https://www.sushinan.cl/img/logo-sushinan.png",
+    "menu": "https://www.sushinan.cl/",
     "servesCuisine": "Sushi",
     "telephone": "+56936413434",
     "priceRange": "$$",
+    "currenciesAccepted": "CLP",
+    "paymentAccepted": "Efectivo, transferencia y tarjeta",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Nueva Recoleta 3632",
       "addressLocality": "Recoleta",
       "addressRegion": "Región Metropolitana",
       "addressCountry": "CL"
+    },
+    "areaServed": [
+      { "@type": "City", "name": "Recoleta" },
+      { "@type": "City", "name": "Conchalí" },
+      { "@type": "City", "name": "Huechuraba" },
+      { "@type": "City", "name": "Independencia" }
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        "opens": "12:15",
+        "closes": "23:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Friday", "Saturday"],
+        "opens": "12:15",
+        "closes": "23:45"
+      }
+    ],
+    "potentialAction": {
+      "@type": "OrderAction",
+      "target": "https://www.sushinan.cl/"
     },
     "sameAs": [
       "https://www.instagram.com/sushinan.s.centro/",
@@ -37,7 +76,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css?v=49">
+  <link rel="stylesheet" href="css/styles.css?v=50">
 </head>
 <body>
 
@@ -98,6 +137,12 @@
   <main class="productos" id="productos-container">
     <!-- Generado por JS -->
   </main>
+
+  <section class="seo-local" aria-labelledby="seo-local-titulo">
+    <h2 id="seo-local-titulo">Sushi delivery en Recoleta y comunas cercanas</h2>
+    <p>¿Buscas sushi en Recoleta? En Sushi Nan preparamos rolls, promociones, handrolls, gohan y opciones vegetarianas para retiro en Nueva Recoleta 3632 o despacho a domicilio.</p>
+    <p>Realizamos delivery en <strong>Recoleta, Conchalí, Huechuraba e Independencia</strong>. Revisa la carta, arma tu pedido y confírmalo directamente por WhatsApp.</p>
+  </section>
 
   <!-- CARRITO LATERAL -->
   <aside class="carrito" id="carrito-panel" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="carrito-titulo" tabindex="-1">
@@ -359,6 +404,6 @@
     </div>
   </footer>
 
-  <script type="module" src="js/app.js?v=29"></script>
+  <script type="module" src="js/app.js?v=30"></script>
 </body>
 </html>

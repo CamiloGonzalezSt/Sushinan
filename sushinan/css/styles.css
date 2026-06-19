@@ -2138,6 +2138,34 @@ header, nav, main, aside, footer, .hero, .overlay {
 /* =====================
    RESPONSIVE
    ===================== */
+.seo-local {
+  max-width: 900px;
+  margin: 24px auto 48px;
+  padding: 28px;
+  border: 1px solid var(--borde);
+  border-radius: 18px;
+  background: rgba(255,255,255,0.025);
+  color: var(--texto-2);
+  line-height: 1.65;
+}
+
+.seo-local h2 {
+  margin-bottom: 12px;
+  color: var(--texto);
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.35rem;
+}
+
+.seo-local p + p { margin-top: 10px; }
+.seo-local strong { color: var(--dorado); }
+
+@media (max-width: 700px) {
+  .seo-local {
+    margin: 18px 16px 36px;
+    padding: 22px 18px;
+  }
+}
+
 @media (min-width: 700px) {
   .hero__logo { width: 90px; height: 90px; }
   .hero__nombre { font-size: 2.4rem; }

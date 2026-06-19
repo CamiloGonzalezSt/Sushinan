@@ -13,7 +13,7 @@ export function renderHero() {
   document.getElementById('logo-negocio').src         = n.logo;
   document.getElementById('nombre-negocio').textContent = n.nombre;
   document.getElementById('tagline-negocio').textContent = n.tagline || '';
-  document.title = n.nombre + ' — Pedidos Online';
+  document.title = 'Sushi en Recoleta y comunas cercanas | ' + n.nombre;
 }
 
 export function renderHeader() {

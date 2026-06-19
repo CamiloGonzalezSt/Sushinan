@@ -59,8 +59,12 @@ for (const [ci, cat] of data.categorias.entries()) {
     // Nombre
     if (!p.nombre) error(`"${p.id || `[${pi}]`}": falta nombre`);
 
-    // Precio (solo si está disponible y no es armaTuRoll con precio base)
-    if (p.disponible !== false && !p.armaTuRoll) {
+    // Precio base: no es obligatorio cuando el producto obtiene su precio
+    // de una o más opciones de variación.
+    const tienePrecioPorVariacion = Array.isArray(p.variaciones)
+      ? p.variaciones.length > 0
+      : Array.isArray(p.variaciones?.opciones) && p.variaciones.opciones.length > 0;
+    if (p.disponible !== false && !p.armaTuRoll && !tienePrecioPorVariacion) {
       if (p.precio === undefined || p.precio === null) {
         error(`"${p.id}": falta precio`);
       } else if (!Number.isFinite(p.precio) || p.precio < 0) {
