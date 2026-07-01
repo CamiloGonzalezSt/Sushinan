@@ -139,6 +139,8 @@ function pedidoConBeneficio() {
   assert.match(checkoutFuente, /beneficioUsadoEnDispositivo\(\)\?\.usado/);
   assert.match(checkoutFuente, /bloquearBeneficioPrimeraCompraUsadoLocalmente/);
   assert.match(checkoutFuente, /confirmacionEnviando/);
+  assert.match(checkoutFuente, /validarBeneficioPrimeraCompraAutomatico\(\{ forzar: true \}\)/);
+  assert.match(checkoutFuente, /!forzar && beneficioPrimeraCompraActivo\(\)/);
 
   const appsScriptFuente = fs.readFileSync(path.join(__dirname, 'apps-script-pedidos.gs'), 'utf8');
   assert.match(appsScriptFuente, /LockService\.getScriptLock/);

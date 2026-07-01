@@ -566,8 +566,8 @@ async function validarBeneficioPrimeraCompraManual() {
   return validarBeneficioPrimeraCompraInterno({ silencioso: false, forzar: true });
 }
 
-async function validarBeneficioPrimeraCompraAutomatico() {
-  return validarBeneficioPrimeraCompraInterno({ silencioso: true, forzar: false });
+async function validarBeneficioPrimeraCompraAutomatico({ forzar = false } = {}) {
+  return validarBeneficioPrimeraCompraInterno({ silencioso: true, forzar });
 }
 
 async function validarBeneficioPrimeraCompraInterno({ silencioso = false, forzar = false } = {}) {
@@ -579,7 +579,7 @@ async function validarBeneficioPrimeraCompraInterno({ silencioso = false, forzar
     renderCarrito();
     return false;
   }
-  if (beneficioPrimeraCompraActivo()) return true;
+  if (!forzar && beneficioPrimeraCompraActivo()) return true;
 
   const telefono = normalizarTelefono(document.getElementById('cliente-telefono')?.value || '');
   const direccion = document.getElementById('cliente-direccion')?.value.trim();
@@ -850,7 +850,7 @@ async function enviarPedidoWhatsapp() {
   error.textContent = '';
   telefonoEl.value = telefono;
   guardarDatosCliente();
-  await validarBeneficioPrimeraCompraAutomatico();
+  await validarBeneficioPrimeraCompraAutomatico({ forzar: true });
 
   const textoPago = {
     efectivo:      'Efectivo al momento de la entrega',
