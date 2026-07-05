@@ -1,5 +1,5 @@
-import { DATA } from '../data.js?v=9';
-import { carrito, formatearPrecio } from '../cart.js?v=9';
+import { DATA } from '../data.js?v=10';
+import { carrito, formatearPrecio } from '../cart.js?v=10';
 import { CATEGORIA_TIPO, generarImagenProducto } from '../placeholders.js?v=3';
 import { escaparHtml } from './utils.js';
 import { mantenerFoco, bloquearScroll, desbloquearScroll } from './utils.js';

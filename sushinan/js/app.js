@@ -1,6 +1,6 @@
 // app.js — Orquestador principal. Importa módulos y wirea eventos globales.
-import { DATA, cargarDatos } from './data.js?v=9';
-import { carrito } from './cart.js?v=9';
+import { DATA, cargarDatos } from './data.js?v=10';
+import { carrito } from './cart.js?v=10';
 import { cargarFavoritos, filtrarProductos, inicializarBusqueda } from './modules/favoritos.js';
 import { inicializarMicrointeracciones, inicializarObservadoresVisuales } from './modules/ui.js';
 import { inicializarModal, inicializarEnlacesProductos, refrescarModalAbierto } from './modules/modal.js';
@@ -14,7 +14,7 @@ import {
   inicializarModalidad, inicializarFormularioCliente, inicializarPrivacidad,
   inicializarProgramacionPedido, inicializarUltimoPedido, inicializarPago,
   inicializarBeneficioPrimeraCompra, inicializarConfirmacion, inicializarWspFlotante
-} from './modules/checkout.js?v=5';
+} from './modules/checkout.js?v=6';
 
 document.addEventListener('DOMContentLoaded', async () => {
   await cargarDatos();

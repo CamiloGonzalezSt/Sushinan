@@ -45,7 +45,7 @@ export const REGLAS_PROMOCIONES = Object.freeze([
     id: 'promo-11',
     dias: [0],
     descuento: 15,
-    precioRegular: 18500,
+    precioRegular: 19500,
     precioOferta: 16570,
     vigencia: 'Solo por hoy domingo'
   }

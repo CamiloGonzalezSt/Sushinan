@@ -154,7 +154,7 @@
           "id": "promo-11",
           "nombre": "Promo 11 — 80 Piezas Mix",
           "descripcion": "10 Pollo, queso, cebollín (Panko) · 10 Camarón, queso, cebollín (Tempura) · 10 Kanikama, queso, palta (Tempura) · 10 Camarón, queso, cebollín (Palta) · 10 Pollo apanado, queso, cebollín (Palta) · 10 Salmón, palta (Sésamo) · 10 Kanikama, palta (Sésamo) · 10 Palmito, queso (Ciboulette)",
-          "precio": 18500,
+          "precio": 19500,
           "imagen": "img/optimized/promociones/promo11.jpg",
           "badge": null
         },
@@ -224,7 +224,7 @@
           "id": "todo-pollo-1",
           "nombre": "Todo Pollo — Opción 1 (20 Piezas)",
           "descripcion": "10 Pollo apanado, queso, cebollín (Panko) · 5 Pollo apanado, queso, cebollín (Palta) · 5 Pollo apanado, palta (Sésamo)",
-          "precio": 7500,
+          "precio": 8500,
           "imagen": "img/optimized/pollo/todopollo1.jpg",
           "badge": "Pollo"
         },
@@ -1812,7 +1812,7 @@
           "id": "handroll-pollo",
           "nombre": "Hand Roll de Pollo",
           "descripcion": "Pollo, queso, cebollín.",
-          "precio": 3000,
+          "precio": 3500,
           "imagen": "img/optimized/handroll/hand1.jpg",
           "badge": null
         },
@@ -1820,7 +1820,7 @@
           "id": "handroll-kanikama",
           "nombre": "Hand Roll de Kanikama",
           "descripcion": "Kanikama, queso, cebollín.",
-          "precio": 3000,
+          "precio": 3500,
           "imagen": "img/optimized/handroll/hand2.jpg",
           "badge": null
         },
@@ -1828,7 +1828,7 @@
           "id": "handroll-champinon",
           "nombre": "Hand Roll de Champiñón",
           "descripcion": "Champiñón, queso, cebollín.",
-          "precio": 3000,
+          "precio": 3500,
           "imagen": "img/optimized/handroll/hand3.jpg",
           "badge": "Vegetariano"
         },
@@ -1836,7 +1836,7 @@
           "id": "handroll-camaron",
           "nombre": "Hand Roll de Camarón",
           "descripcion": "Camarón, queso, cebollín.",
-          "precio": 3500,
+          "precio": 4500,
           "imagen": "img/optimized/handroll/hand4.jpg",
           "badge": null
         },
@@ -1844,9 +1844,25 @@
           "id": "handroll-salmon",
           "nombre": "Hand Roll de Salmón",
           "descripcion": "Salmón, queso, cebollín.",
-          "precio": 3500,
+          "precio": 4500,
           "imagen": "img/optimized/handroll/hand5.jpg",
           "badge": null
+        },
+        {
+          "id": "handroll-carne",
+          "nombre": "Hand Roll de Carne",
+          "descripcion": "Carne, queso, cebollín.",
+          "precio": 4500,
+          "imagen": "img/optimized/handroll/hand4.jpg",
+          "badge": null
+        },
+        {
+          "id": "handroll-palmito",
+          "nombre": "Hand Roll de Palmito",
+          "descripcion": "Palmito, queso, cebollín.",
+          "precio": 3500,
+          "imagen": "img/optimized/handroll/hand3.jpg",
+          "badge": "Vegetariano"
         }
       ]
     },
