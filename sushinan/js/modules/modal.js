@@ -1,4 +1,4 @@
-import { DATA } from '../data.js?v=11';
+import { DATA } from '../data.js?v=12';
 import { carrito, formatearPrecio } from '../cart.js?v=10';
 import { CATEGORIA_TIPO, generarImagenProducto } from '../placeholders.js?v=3';
 import { escaparHtml } from './utils.js';

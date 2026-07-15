@@ -1,4 +1,4 @@
-import { DATA } from '../data.js?v=11';
+import { DATA } from '../data.js?v=12';
 import { precioCardTexto } from './producto-utils.js';
 import { mostrarAvisoSimple } from './ui.js';
 

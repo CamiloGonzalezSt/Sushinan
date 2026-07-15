@@ -86,7 +86,7 @@ memoria.set('sushinan-carrito', JSON.stringify({
 }));
 
 const codigoCarrito = readFileSync(join(raizWeb, 'js/cart.js'), 'utf8')
-  .replace("import { DATA } from './data.js?v=11';", 'const DATA = globalThis.__DATA_PRUEBA;');
+  .replace("import { DATA } from './data.js?v=12';", 'const DATA = globalThis.__DATA_PRUEBA;');
 const { carrito } = await import(comoDataUrl(codigoCarrito));
 carrito.cargar();
 verificar(carrito.items['promo-8'].producto.precio === 15290, 'El carrito no adoptó la oferta activa');
