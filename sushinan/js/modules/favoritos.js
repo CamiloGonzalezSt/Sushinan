@@ -1,4 +1,4 @@
-import { DATA } from '../data.js?v=12';
+import { DATA } from '../data.js?v=13';
 import { mostrarToast } from './ui.js';
 
 let favoritos    = new Set();

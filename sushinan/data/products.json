@@ -1936,14 +1936,6 @@
           "badge": null
         },
         {
-          "id": "ap-salchipapas",
-          "nombre": "Salchipapas",
-          "descripcion": "Papas con vienesa.",
-          "precio": 5500,
-          "imagen": "img/optimized/compartir/salchipapa.jpg",
-          "badge": null
-        },
-        {
           "id": "ap-calamar",
           "nombre": "Calamar Apanado",
           "descripcion": "15 unidades.",
@@ -1966,6 +1958,77 @@
           "precio": 7000,
           "imagen": "img/optimized/compartir/camaron2.jpg",
           "badge": null
+        }
+      ]
+    },
+    {
+      "id": "comida-rapida",
+      "nombre": "Comida rápida",
+      "icono": "🍟",
+      "productos": [
+        {
+          "id": "pollo-saltado",
+          "nombre": "Pollo saltado",
+          "descripcion": "Pollo saltado acompañado de arroz blanco, papas fritas y cremas.",
+          "precio": 7000,
+          "imagen": "img/optimized/comida-rapida/pollo-saltado.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "lomo-saltado",
+          "nombre": "Lomo saltado",
+          "descripcion": "Carne salteada acompañada de arroz blanco, papas fritas y cremas.",
+          "precio": 8000,
+          "imagen": "img/optimized/comida-rapida/lomo-saltado.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "arroz-chaufa-pollo",
+          "nombre": "Arroz chaufa de pollo",
+          "descripcion": "Arroz chaufa con pollo, huevo, cebollín, cremas y wantán frito.",
+          "precio": 7000,
+          "imagen": "img/optimized/comida-rapida/arroz-chaufa-pollo.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "arroz-chaufa-3-sabores",
+          "nombre": "Arroz chaufa 3 sabores",
+          "descripcion": "Carne, pollo, cerdo, arroz, cebollín, huevo, cremas y wantán frito.",
+          "precio": 9000,
+          "imagen": "img/optimized/comida-rapida/arroz-chaufa-3-sabores.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "salchipapa-comida-rapida",
+          "nombre": "Salchipapa",
+          "descripcion": "Papas fritas con rodajas de salchicha frita, cremas y salsas peruanas.",
+          "precio": 5000,
+          "imagen": "img/optimized/comida-rapida/salchipapa.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "pollo-plancha",
+          "nombre": "Pollo a la plancha",
+          "descripcion": "Acompañado de arroz blanco, ensalada, papas fritas y cremas.",
+          "precio": 7500,
+          "imagen": "img/optimized/comida-rapida/pollo-plancha.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "pollo-frito",
+          "nombre": "Pollo frito",
+          "descripcion": "Acompañado de arroz, papas fritas, ensalada y cremas.",
+          "precio": 6500,
+          "imagen": "img/optimized/comida-rapida/pollo-frito.jpg",
+          "badge": "Nuevo"
+        },
+        {
+          "id": "salchipollo",
+          "nombre": "Salchipollo",
+          "descripcion": "Salchicha frita con papas fritas, ensalada y cremas.",
+          "precio": 7000,
+          "imagen": "img/optimized/comida-rapida/salchipollo.jpg",
+          "badge": "Nuevo"
         }
       ]
     },
