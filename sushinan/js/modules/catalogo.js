@@ -1,5 +1,5 @@
-import { DATA } from '../data.js?v=13';
-import { carrito, formatearPrecio } from '../cart.js?v=10';
+import { DATA } from '../data.js?v=14';
+import { carrito, formatearPrecio } from '../cart.js?v=11';
 import { CATEGORIA_TIPO, generarImagenProducto } from '../placeholders.js?v=3';
 import { escaparHtml } from './utils.js';
 import { tieneVariaciones, precioCardTexto, productoConVariacion, badgeClase } from './producto-utils.js';
@@ -7,6 +7,7 @@ import { animarCartBtn, centrarBotonNav } from './ui.js';
 import { getFavoritos, alternarFavorito } from './favoritos.js';
 import { abrirModal, renderModalControles, getModalProductoActual } from './modal.js';
 import { compartirProducto } from './compartir.js';
+import { categoriasActivas, productoDisponible } from './disponibilidad-programada.js';
 
 export function renderHero() {
   const n = DATA.negocio;
@@ -56,7 +57,7 @@ export function renderFooter() {
 export function renderNavCategorias() {
   const nav = document.getElementById('categorias-nav');
   nav.innerHTML = '';
-  DATA.categorias.forEach((cat, i) => {
+  categoriasActivas(DATA).forEach((cat, i) => {
     const btn = document.createElement('button');
     btn.className        = 'categoria-btn' + (i === 0 ? ' activa' : '');
     btn.dataset.categoria = cat.id;
@@ -91,7 +92,7 @@ export function renderNavCategorias() {
 export function renderProductos() {
   const container = document.getElementById('productos-container');
   container.innerHTML = '';
-  DATA.categorias.forEach(cat => {
+  categoriasActivas(DATA).forEach(cat => {
     const seccion   = document.createElement('section');
     seccion.className = 'categoria-seccion';
     seccion.id        = 'seccion-' + cat.id;
@@ -114,7 +115,7 @@ export function renderProductos() {
 }
 
 export function renderControlProducto(container, producto) {
-  if (producto.disponible === false) {
+  if (!productoDisponible(producto, DATA)) {
     container.innerHTML = '<button class="btn-agregar" disabled>Agotado</button>';
     return;
   }
@@ -143,7 +144,7 @@ export function renderControlProducto(container, producto) {
 }
 
 export function renderBotonesCantidad() {
-  DATA.categorias.forEach(cat => {
+  categoriasActivas(DATA).forEach(cat => {
     cat.productos.forEach(p => {
       const el = document.querySelector(`.controles-${p.id}`);
       if (el) renderControlProducto(el, p);
@@ -163,11 +164,11 @@ function crearCardProducto(producto, categoria) {
   card.tabIndex    = 0;
   card.setAttribute('role',       'group');
   card.setAttribute('aria-label', `${producto.nombre}. ${producto.descripcion || ''}`.trim());
-  if (producto.disponible === false) card.classList.add('agotado');
+  if (!productoDisponible(producto, DATA)) card.classList.add('agotado');
   card.dataset.id     = producto.id;
   card.dataset.nombre = (producto.nombre + ' ' + (producto.descripcion || '')).toLowerCase();
 
-  const badgeTexto = producto.disponible === false ? 'AGOTADO' : (producto.badge || categoria.nombre);
+  const badgeTexto = !productoDisponible(producto, DATA) ? 'AGOTADO' : (producto.badge || categoria.nombre);
   const tipoIlo    = CATEGORIA_TIPO[categoria.id] || 'platter';
   const srcImg     = generarImagenProducto(producto, categoria.nombre, tipoIlo);
   const promo      = producto.promocionProgramada?.activa ? producto.promocionProgramada : null;

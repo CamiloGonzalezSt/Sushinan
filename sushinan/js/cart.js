@@ -1,7 +1,8 @@
 // cart.js
 // Lógica del carrito: estado en memoria (sin localStorage por restricción de artifacts,
 // pero en producción real fuera de artifacts SÍ se puede usar localStorage para persistencia).
-import { DATA } from './data.js?v=13';
+import { DATA } from './data.js?v=14';
+import { productoDisponible, removerProductosNoActivos } from './modules/disponibilidad-programada.js';
 
 export const carrito = {
   items: {}, // { productoId: { producto, cantidad } }
@@ -19,7 +20,7 @@ export const carrito = {
         Object.entries(guardado.items).filter(([, item]) => {
           const idBase = item?.producto?.id?.split('__')[0];
           const productoActual = catalogo.get(idBase);
-          return productoActual && productoActual.disponible !== false &&
+          return productoActual && productoDisponible(productoActual, DATA) &&
             Number.isFinite(item.producto.precio) && Number.isInteger(item.cantidad) &&
             item.cantidad > 0 && item.cantidad <= 99;
         })
@@ -44,8 +45,8 @@ export const carrito = {
   },
 
   sincronizarPrecios(notificar = true) {
+    let cambio = removerProductosNoActivos(this.items, DATA).length > 0;
     const catalogo = new Map(DATA.categorias.flatMap(c => c.productos).map(p => [p.id, p]));
-    let cambio = false;
     Object.values(this.items).forEach(item => {
       const idBase = item.producto.id.split('__')[0];
       const productoActual = catalogo.get(idBase);
@@ -68,6 +69,10 @@ export const carrito = {
   },
 
   agregar(producto, origen = null) {
+    if (!productoDisponible(producto, DATA)) {
+      window.alert('Comida rápida peruana estará disponible desde el viernes 24 de julio a las 12:30 hrs.');
+      return false;
+    }
     document.dispatchEvent(new CustomEvent('carrito:agregado', {
       detail: { producto, origen: origen || document.activeElement }
     }));
@@ -77,6 +82,7 @@ export const carrito = {
       this.items[producto.id] = { producto, cantidad: 1 };
     }
     this.actualizar();
+    return true;
   },
 
   quitar(productoId) {

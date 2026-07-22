@@ -39,6 +39,7 @@ if (!n.catalogo_version) advertencia('negocio.catalogo_version no está definido
 const idsVistos = new Set();
 let totalProductos = 0;
 let agotados = 0;
+let programados = 0;
 
 for (const [ci, cat] of data.categorias.entries()) {
   if (!cat.id) { error(`Categoría [${ci}] no tiene id`); continue; }
@@ -59,12 +60,15 @@ for (const [ci, cat] of data.categorias.entries()) {
     // Nombre
     if (!p.nombre) error(`"${p.id || `[${pi}]`}": falta nombre`);
 
+    const productoProgramado = p.disponible === false && cat.disponibilidadProgramada === true && Boolean(cat.activoDesde);
+    const productoBloqueado = p.disponible === false && !productoProgramado;
+
     // Precio base: no es obligatorio cuando el producto obtiene su precio
     // de una o más opciones de variación.
     const tienePrecioPorVariacion = Array.isArray(p.variaciones)
       ? p.variaciones.length > 0
       : Array.isArray(p.variaciones?.opciones) && p.variaciones.opciones.length > 0;
-    if (p.disponible !== false && !p.armaTuRoll && !tienePrecioPorVariacion) {
+    if (!productoBloqueado && !p.armaTuRoll && !tienePrecioPorVariacion) {
       if (p.precio === undefined || p.precio === null) {
         error(`"${p.id}": falta precio`);
       } else if (!Number.isFinite(p.precio) || p.precio < 0) {
@@ -79,7 +83,8 @@ for (const [ci, cat] of data.categorias.entries()) {
     }
 
     // Disponibilidad
-    if (p.disponible === false) agotados++;
+    if (productoProgramado) programados++;
+    else if (p.disponible === false) agotados++;
 
     // Variaciones
     if (p.variaciones) {
@@ -114,7 +119,7 @@ for (const [ci, cat] of data.categorias.entries()) {
 }
 
 // Resumen
-console.log(`\n📊 ${totalProductos} productos · ${data.categorias.length} categorías · ${agotados} agotados`);
+console.log(`\n📊 ${totalProductos} productos · ${data.categorias.length} categorías · ${agotados} agotados · ${programados} programados`);
 
 if (errores === 0 && advertencias === 0) {
   console.log('✅ Catálogo válido — sin errores ni advertencias\n');

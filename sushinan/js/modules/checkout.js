@@ -1,5 +1,5 @@
-import { DATA } from '../data.js?v=13';
-import { carrito, formatearPrecio } from '../cart.js?v=10';
+import { DATA } from '../data.js?v=14';
+import { carrito, formatearPrecio } from '../cart.js?v=11';
 import { escaparHtml, fechaChileISO, horaChile, normalizarTelefono, mantenerFoco, bloquearScroll, desbloquearScroll } from './utils.js';
 import { borrarDatosLocales, guardarConCaducidad, leerConCaducidad } from './storage.js';
 import { obtenerInfoHorario, textoProximaAtencion, validarProgramacion } from './horarios.js';
@@ -7,6 +7,7 @@ import { mostrarAvisoSimple } from './ui.js';
 import { actualizarUIFavoritos, filtrarProductos, resetFavoritos } from './favoritos.js';
 import { renderBotonesCantidad } from './catalogo.js';
 import { crearIdPedido, enviarPedidoGenerado } from './tracking-pedidos.js';
+import { categoriasActivas, productoDisponible } from './disponibilidad-programada.js';
 import {
   prepararClienteBeneficio,
   validarPrimeraCompra,
@@ -688,10 +689,10 @@ function obtenerUltimoPedido() {
   try {
     const pedido = leerConCaducidad('sushinan-ultimo-pedido');
     if (!pedido || pedido.version !== (DATA.negocio.catalogo_version || 1) || !pedido.items) return null;
-    const catalogo   = new Map(DATA.categorias.flatMap(c => c.productos).map(p => [p.id, p]));
+    const catalogo   = new Map(categoriasActivas(DATA).flatMap(c => c.productos).map(p => [p.id, p]));
     const itemsValidos = Object.fromEntries(Object.entries(pedido.items).filter(([, item]) => {
       const base = catalogo.get(item?.producto?.id?.split('__')[0]);
-      return base && base.disponible !== false && item.cantidad > 0 && item.cantidad <= 99;
+      return productoDisponible(base, DATA) && item.cantidad > 0 && item.cantidad <= 99;
     }));
     return Object.keys(itemsValidos).length ? { ...pedido, items: itemsValidos } : null;
   } catch (_) { return null; }
@@ -821,6 +822,14 @@ async function enviarPedidoWhatsapp() {
   const horaPedido  = document.getElementById('cliente-hora-pedido').value;
   const error = document.getElementById('form-error');
   error.className = 'form-error';
+
+  const productosNoActivos = entries.filter(({ producto }) => !productoDisponible(producto, DATA));
+  if (productosNoActivos.length) {
+    productosNoActivos.forEach(({ producto }) => carrito.eliminar(producto.id));
+    error.textContent = 'Comida rápida peruana estará disponible desde el viernes 24 de julio a las 12:30 hrs.';
+    renderCarrito();
+    return;
+  }
 
   const requeridos = [['cliente-nombre', nombre], ['cliente-telefono', telefono]];
   if (modalidadPedido === 'delivery') requeridos.push(['cliente-direccion', direccion], ['cliente-comuna', comuna]);

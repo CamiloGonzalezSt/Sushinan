@@ -1,4 +1,4 @@
-import { formatearPrecio } from '../cart.js?v=10';
+import { formatearPrecio } from '../cart.js?v=11';
 
 export function tieneVariaciones(p) {
   if (p.armaTuRoll) return true;

@@ -1,5 +1,5 @@
-import { DATA } from '../data.js?v=13';
-import { carrito, formatearPrecio } from '../cart.js?v=10';
+import { DATA } from '../data.js?v=14';
+import { carrito, formatearPrecio } from '../cart.js?v=11';
 import { CATEGORIA_TIPO, generarImagenProducto } from '../placeholders.js?v=3';
 import { escaparHtml } from './utils.js';
 import { mantenerFoco, bloquearScroll, desbloquearScroll } from './utils.js';
@@ -9,6 +9,7 @@ import {
   productoConVariacionArma, badgeClase
 } from './producto-utils.js';
 import { animarCartBtn } from './ui.js';
+import { productoDisponible } from './disponibilidad-programada.js';
 
 let modalProductoActual   = null;
 let modalVariacionActual  = null;
@@ -45,10 +46,14 @@ export function inicializarEnlacesProductos() {
   const id = new URLSearchParams(window.location.search).get('producto');
   if (!id) return;
   const producto = DATA.categorias.flatMap(c => c.productos).find(p => p.id === id);
-  if (producto) abrirModal(producto, false);
+  if (producto && productoDisponible(producto, DATA)) abrirModal(producto, false);
 }
 
 export function abrirModal(producto, actualizarUrl = true) {
+  if (!productoDisponible(producto, DATA)) {
+    quitarProductoDeUrl();
+    return;
+  }
   focoAnterior          = document.activeElement;
   modalProductoActual   = producto;
   armaTuRollIngredientes = [];
