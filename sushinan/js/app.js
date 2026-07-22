@@ -1,5 +1,5 @@
 // app.js — Orquestador principal. Importa módulos y wirea eventos globales.
-import { DATA, cargarDatos } from './data.js?v=14';
+import { DATA, cargarDatos } from './data.js?v=15';
 import { carrito } from './cart.js?v=11';
 import { cargarFavoritos, filtrarProductos, inicializarBusqueda } from './modules/favoritos.js';
 import { inicializarMicrointeracciones, inicializarObservadoresVisuales } from './modules/ui.js';

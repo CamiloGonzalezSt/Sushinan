@@ -7,7 +7,7 @@ export let DATA = null;
 
 export async function cargarDatos() {
   try {
-    const res = await fetch('data/products.json?v=12');
+    const res = await fetch('data/products.json?v=13');
     if (!res.ok) throw new Error(`No se pudo cargar el catálogo (${res.status})`);
     DATA = await res.json();
     if (!DATA?.negocio || !Array.isArray(DATA?.categorias)) {

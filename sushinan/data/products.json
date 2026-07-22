@@ -2032,6 +2032,15 @@
           "disponible": false
         },
         {
+          "id": "pollo-broaster",
+          "nombre": "Pollo broaster",
+          "descripcion": "Pollo broaster acompañado de papas fritas, ensalada y cremas.",
+          "precio": 6990,
+          "imagen": "img/optimized/comida-rapida/pollo-broaster.jpg",
+          "badge": "Nuevo",
+          "disponible": false
+        },
+        {
           "id": "salchipollo",
           "nombre": "Salchipollo",
           "descripcion": "Salchicha frita con papas fritas, ensalada y cremas.",

@@ -1,7 +1,7 @@
 // cart.js
 // Lógica del carrito: estado en memoria (sin localStorage por restricción de artifacts,
 // pero en producción real fuera de artifacts SÍ se puede usar localStorage para persistencia).
-import { DATA } from './data.js?v=14';
+import { DATA } from './data.js?v=15';
 import { productoDisponible, removerProductosNoActivos } from './modules/disponibilidad-programada.js';
 
 export const carrito = {
